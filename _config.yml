@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl:
-url: 
+url: 'ge00rg.github.io'
 title: MKP # site's title
 description: "Modelling of Cognitive Processes" # used by search engines
 
