@@ -1,0 +1,92 @@
+---
+layout: default
+---
+<style>
+.feature-image header{
+    background-image: url('{{ site.baseurl }}/assets/img/banners/{{ page.banner-img }}')
+    }
+@media screen and (max-width: 800px) {
+    .feature-image header{background-image: url('')}
+}
+</style>
+
+<article {% if page.banner-img %}class="feature-image"{% endif %}>
+    <header id="main">
+        <h1 align="left" id="{{ page.title | default: "" | cgi_escape }}" class="title">
+            {{ page.title }}
+        </h1>
+    
+        {% if page.subtitle %}
+            <h2 align="left" class="subtitle">{{ page.subtitle }}</h2>
+        {% endif %}
+    </header>
+
+    <section class="post-content">
+        {% if page.bootstrap %}
+            <div class="bootstrap-iso">
+        {% endif %}
+        {{ content }}
+        {% if page.bootstrap %}
+            </div>
+        {% endif %}
+    </section>
+    
+  <!-- Tag list for portfolio -->
+    {% capture tag_list %}{{ page.tags | join: "|"}}{% endcapture %}
+    {% include tags_list.html tags=tag_list %}
+    
+</article>
+
+{% assign max_posts=2 %}
+
+<div class="side_posts">
+    <h1>Latest News</h1>
+    {% assign i=0 %}
+    {% for post in site.posts %}
+        {% if i < max_posts %}
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                {{post.title}}<br>
+                <div class="date">{{post.date | date: '%B %d, %Y'}}</div>
+            </a>
+        {% endif %}
+        {% assign i = i | plus:1 %}
+    {% endfor %}
+</div>
+
+{% assign talks=site.talks | sort: 'date' %}
+{% assign max_events=3 %}
+<div class="side_events">
+    <h1>Upcoming Events</h1>
+    {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %} 
+    {% assign i=0 %}
+
+    {% for post in talks %}
+        {% if post.priority %}
+            {% capture postpriotime %}{{post.priority | date: '%s'}}{% endcapture %}
+            {% if postpriotime <= nowunix %}
+                {% if i < max_events %}
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                        <span>{{post.speaker}}{% if post.affiliation %} [{{post.affiliation}}]{% endif %}</span><br>
+                        <div class="date">{{post.date | date: '%B %d, %Y'}}</div>
+                    </a>
+                    {% assign i = i | plus:1 %}
+                {% endif %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+
+    {% for post in talks %}
+        {% unless post.priority %}
+            {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+            {% if posttime > nowunix %}
+                {% if i < max_events %}
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                        <span>{{post.speaker}}{% if post.affiliation %} [{{post.affiliation}}]{% endif %}</span><br>
+                        <div class="date">{{post.date | date: '%B %d, %Y'}}</div>
+                    </a>
+                    {% assign i = i | plus:1 %}
+                {% endif %}
+            {% endif %}
+        {% endunless %}
+    {% endfor %}
+</div>

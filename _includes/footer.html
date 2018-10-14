@@ -1,0 +1,32 @@
+<!--
+{% if site.theme_settings.footer_text %}
+<footer class="site-footer">
+    <p class="text">{{ site.theme_settings.footer_text }}</p>
+            <div class="footer-icons">
+                <ul>
+                {% include icons.html %}
+                </ul>
+            </div>
+</footer>
+{% endif %}
+-->
+
+<footer class = "site-footer">
+    <div class="row" style="display: flex; align: center;">
+        <div class="column" style="width: 35%;">
+            <p class="text">
+                <a href="https://www.cognition.tu-berlin.de/menue/teaching/">Teaching</a> | <a href="{{site.baseurl}}/contact">Contact</a> | <a href="{{site.baseurl}}/impressum">Impressum</a>
+            </p>
+        </div>
+        <div class="column" style="width: 32%;">
+            <a href="https://www.bccn-berlin.de/Home/">
+                <img src="{{site.baseurl}}/assets/img/footer/logo-bccn.jpg" style="width:100%">
+            </a>
+        </div>
+        <div class="column" style="width: 32%;">
+            <a href="https://www.tu-berlin.de/menue/home/">
+                <img src="{{site.baseurl}}/assets/img/footer/tu-berlin-logo.png" style="width:100%">
+            </a>
+        </div>
+	</div>
+</footer>

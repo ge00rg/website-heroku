@@ -1,0 +1,9 @@
+---
+layout: post_event
+title: Neuromodulation, circadian rhythms and nervous system robustness
+date: March 21, 2016
+img:
+speaker: Tim O'Leary 
+affiliation: University of Cambridge
+---
+Neuromodulation can profoundly alter the intrinsic and synaptic properties of a neural circuit, leading to changes in physiological function that underlie motor behavior, attention, learning and memory, and sleep. In spite of the clear importance of neuromodulation for understanding neural circuit function, there is relatively little theoretical work that accounts for how neuromodulators interact with neural circuit physiology, or the unique problems neuromodulation poses for understanding brain function. In particular, it is not known how neuromodulation, which often results in significant and widespread changes in cellular excitability, can be reconciled with homeostatic mechanisms that notionally keep neural activity close to a ‘target level’ or ‘set point’. In this talk I will outline a very simple model of cellular regulation that can generate and maintain specific physiological cell types, such as fast spiking neurons and bursting neurons. This model turns out to explain experimental data on single-cell conductance expression very well, but it also permits deviations and ‘drift’ in cellular properties over time. This suggests an interesting duality between flexibility and robustness of neural properties: the simple regulation mechanism is compliant enough to permit neuromodulation, offering a way to reconcile modulation and homeostasis; on the other hand, the model predicts that there will be many perturbations that neurons cannot compensate for and that pathologies can even arise from the so-called homeostatic mechanism itself. Finally, I will speculate on a role for circadian rhythms in maintaining cellular identity by preventing drift in the underlying conductance profile of a neuron.

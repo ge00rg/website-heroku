@@ -1,0 +1,9 @@
+---
+layout: post_event
+title: Dendrites enable a robust mechanism for neuronal stimulus selectivity
+date: May 30, 2017
+img:
+speaker: Romain Cazé
+affiliation: Imperial College London
+---
+Hearing, vision, touch -- underlying all of these senses is stimulus selectivity, a robust information processing operation in which cortical neurons respond more to some stimuli than to others. Previous models assume that these neurons receive the highest weighted input from an ensemble encoding the preferred stimulus, but dendrites enable other possibilities. Non-linear dendritic processing can produce stimulus selectivity based on the spatial distribution of synapses, even if the total preferred stimulus weight does not exceed that of non-preferred stimuli. Using a multi-subunit non-linear model, we demonstrate that stimulus selectivity can arise from the spatial distribution of synapses. We propose this as a general mechanism for information processing by neurons possessing dendritic trees. Moreover, we show that this implementation of stimulus selectivity increases the neuron's robustness to synaptic and dendritic failure. Importantly, our model can maintain stimulus selectivity for a larger range of synapses or dendrites loss than an equivalent linear model. We then use a layer 2/3 biophysical neuron model to show that our implementation is consistent with two recent experimental observations: (1) one can observe a mixture of selectivities in dendrites, that can differ from the somatic selectivity, and (2) hyperpolarization can broaden somatic tuning without affecting dendritic tuning. Our model predicts that an initially non-selective neuron can become selective when depolarized. In addition to motivating new experiments, the model's increased robustness to synapses and dendrites loss provides a starting point for fault-resistant neuromorphic chip development.

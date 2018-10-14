@@ -1,0 +1,42 @@
+.site-footer {
+    @extend %padding-regular;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    color: lighten($text-color, 30%);
+    font-size: 0.9em;
+
+    a {
+        color: lighten($text-color, 30%);	
+        }
+    a:hover {
+        color: $text-color;
+            }
+
+    .footer-icons {
+        ul {
+            list-style: none;
+            li {
+                display: inline;
+            }
+            a:hover {
+                color: darken($link-color, 15%);
+            }
+        }
+    }
+}
+
+.text {font-size: 1.2em;}
+
+@media screen and (max-width: 1600px) {
+    .text {font-size: 1.0em;}
+}
+@media screen and (max-width: 1400px) {
+    .text {font-size: 0.8em;}
+}
+@media screen and (max-width: 1200px) {
+    .text {font-size: 0.7em;}
+}
+@media screen and (max-width: 900px) {
+    .text {font-size: 0.6em;}
+}

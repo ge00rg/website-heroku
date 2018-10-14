@@ -1,0 +1,91 @@
+<style>
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 33.3%;
+    height: 360px;
+    margin-bottom: 20px;
+    padding: 0 8px;
+    transition: transform .2s;
+}
+
+.column:hover {
+    transform: scale(1.1);
+}
+
+.row {
+    display: inline-block
+}
+h3 {
+    text-align: left;
+    padding-left: 50px;
+}
+figcaption {
+    text-align: center;
+}
+
+.memberpic{
+    -webkit-filter: grayscale(100%) contrast(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) contrast(200%);
+    border-radius: 40px /10px;
+}
+.memberpic:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .column {
+        width: 80%;
+        display: block;
+    }
+    .memberpic{
+        -webkit-filter: grayscale(0%) contrast(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%) contrast(100%);
+        border-radius: 40px /10px;
+    }
+    .memberpic:hover {
+        -webkit-filter: grayscale(0%) contrast(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%) contrast(100%);
+    }
+
+    .column:hover {
+        transform: scale(1.0);
+    }
+    
+}
+@media screen and (max-width: 450px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+
+<div class="row">
+    {% for position in page.position-order %}
+        {% for member in site.members %}
+            {% if member.position == position %}
+                <div class="column">
+                    <a href="{{ site.baseurl }}{{ member.url }}" data-keyboard="true">
+                        <img class="memberpic" src="{{ site.baseurl }}/assets/img/members/{{ member.img }}">
+                    </a>
+                    <figcaption>{{member.title}}</figcaption>
+                    <figcaption>{{member.position}}</figcaption>
+                </div>
+            {% endif %} 
+        {% endfor %}
+  {% endfor %}
+
+  {% for member in site.members %}
+        {% unless page.position-order contains member.position %}
+            <div class="column">
+                <a href="{{ site.baseurl }}{{ member.url }}" data-keyboard="true">
+                    <img class="memberpic" src="{{ site.baseurl }}/assets/img/members/{{ member.img }}">
+                </a>
+                <figcaption>{{member.title}}</figcaption>
+                <figcaption>{{member.position}}</figcaption>
+            </div>
+        {% endunless %} 
+  {% endfor %}
+</div>

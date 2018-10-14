@@ -1,0 +1,10 @@
+---
+layout: post_event
+title: The Cost of Control in Perceptual Decision Making
+date: July 04, 2020
+speaker: Alfonso Renart
+location: MAR 1002.356
+affiliation: Champalimaud
+priority: September 18, 2018
+---
+Normative models of behavior specify optimal policies for agents under specific contingencies and reward schedules. In reinforcement learning (RL), agents are typically assumed to be able to adapt their behavior to the optimal policy effortlessly. Real subjects, however, are not a tabula rasa, and have to face particular tasks with a set of default behavioral policies. To the extent that the default policies are not adaptive in a particular setting, optimal behavior requires control, and this carries a cost, that should be included into the optimization process. I will describe the effect of the cost of control on optimal perceptual binary decision making. We consider 'default' policies where agents make choices at a given rate in a way which is independent from the sensory stimulus. Control is required both to generate task-appropriate responses (i.e., to make choices which depend on the agent's beliefs about the sensory stimulus) as well as to set the timing of these responses in order to strike an appropriate balance between speed and accuracy. Our model generalizes the Linear Markov Decision Process (LMDP) framework developed by Todorov to handle Partially Observable MDPs, which provide the correct setting to study optimal behavior under sensory uncertainty. We describe how decision confidence, choice accuracy and reaction time are affected by Control and make testable predictions that signal when a particular behavioral phenotype is control-limited. As a corollary, we unify diverse accounts of decision-confidence from Signal Detection Theory and Sequential Sampling Theory which helps identifying behavioral features that can be used as implicit measures of confidence in perceptual decision-making.

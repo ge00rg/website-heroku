@@ -1,0 +1,178 @@
+[
+{
+    "title": "Sparse bursts optimize information transmission in a multiplexed neural code",
+    "author": "R. Naud, H. Sprekeler",
+    "year": "2018",
+    "journal": "PNAS, 115(27):E6329-E6338",
+    "link" : "chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/http://www.pnas.org/content/pnas/early/2018/06/21/1720995115.full.pdf"
+},
+{
+    "title": "Memory replay in balanced recurrent networks",
+    "author": "N. Chenkov, H. Sprekeler, R. Kempter",
+    "year": "2017",
+    "journal": "PLoS Computational Biology 13(1): e1005359",
+    "link" : "http://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005359&type=printable"
+},
+{
+    "title": "Learning place cells, grid cells, and invariances with excitatory and inhibitory plasticity",
+    "author": "S.N. Weber, H. Sprekeler",
+    "year": "2018",
+    "journal": "eLife 2018;7:e34560",
+    "link": "https://elifesciences.org/articles/34560"
+},
+
+{
+    "title": "Nonlinear Bayesian filtering and learning: a neuronal dynamics for perception",
+    "author": "A. Kutschireiter, S.C.  Surace, H.  Sprekeler, J.P.  Pfister",
+    "year": "2017",
+    "journal": "Current Opinion in Neurobiology 43, 198-203",
+    "link": "https://www.nature.com/articles/s41598-017-06519-y.pdf"
+},
+{
+    "title": "Functional consequences of inhibitory plasticity: homeostasis, the excitation-inhibition balance and beyond ",
+    "author": "H. Sprekeler",
+    "year": "2017",
+    "journal": "Scientific Reports 7:8722, DOI:10.1038/s41598-017-06519-y",
+    "link": "http://ac.els-cdn.com/S0959438817300909/1-s2.0-S0959438817300909-main.pdf?_tid=308ef4a2-670e-11e7-bc61-00000aacb35d&acdnat=1499869810_74882c9f1e450688963c89b5d87c0d14"
+},
+{
+    "title": "Inhibition as a Binary Switch for Excitatory Plasticity in Pyramidal Neurons ",
+    "author": "K.A. Wilmes, H. Sprekeler, S. Schreiber",
+    "year": "2016",
+    "journal": "PLoS Computational Biology, 12(2), e1004768",
+    "link": "http://journals.plos.org/ploscompbiol/article/asset?id=10.1371%2Fjournal.pcbi.1004768.PDF"
+},
+{
+    "title": "Inheritance of Hippocampal Place Fields Through Hebbian Learning: Effects of Theta Modulation and Phase Precession of Structure Formation",
+    "author": "T. D'Albis, J. Jaramillo, H. Sprekeler, R. Kempter",
+    "year": "2015",
+    "journal": "Neural Computation, 27(8), 1624-1672",
+    "link": "http://www.mitpressjournals.org/doi/pdf/10.1162/NECO_a_00752"
+},
+{
+    "title": "An Extension of Slow Feature Analysis for Nonlinear Blind Source Separation",
+    "author": "H. Sprekeler, T. Zito and L. Wiskott",
+    "year": "2014",
+    "journal": "Journal of Machine Learning Research 15, 921-947 ",
+    "link": "http://jmlr.org/papers/volume15/sprekeler14a/sprekeler14a.pdf"
+},
+{
+    "title": "Reinforcement Learning using a Continuous Time Actor-Critic Framework with Spiking Neurons ",
+    "author": "N. Fremaux, H. Sprekeler, W. Gerstner",
+    "year": "2013",
+    "journal": "PLoS Computational Biology, 9(4): e1003024",
+    "link": "https://itb.biologie.hu-berlin.de/~sprekeler/data/paper/Fremaux13.pdf"
+},
+{
+    "title": "Changing the responses of cortical neurons from sub- to supra-threshold using single spikes in vivo",
+    "author": "V. Pawlak, D. S. Greenberg, H. Sprekeler, W. Gerstner, J. Kerr",
+    "year": "2013",
+    "journal": "eLife 2013;2:e00012",
+    "link": "https://itb.biologie.hu-berlin.de/~sprekeler/data/paper/Pawlak13.pdf"
+},
+{
+    "title": "The silent period of evidence integration in fast decision making",
+    "author": "J. Rüter, H. Sprekeler, W. Gerstner, M. H. Herzog",
+    "year": "2012",
+    "journal": "PloS One 8(1):e46525",
+    "link": "https://itb.biologie.hu-berlin.de/~sprekeler/data/paper/Rueter13.pdf"
+},
+{
+    "title": "Theory and simulation in neuroscience",
+    "author": "W. Gerstner, H. Sprekeler, G. Deco",
+    "year": "2012",
+    "journal": "Science 338:60-65",
+    "link": "http://www.sciencemag.org/content/338/6103/60.full.pdf"
+},
+{
+    "title": "Perceptual learning, Roving & the Unsupervised Bias",
+    "author": "M. H. Herzog, K. C. Aberg, N. Fremaux, W. Gerstner, H. Sprekeler",
+    "year": "2012",
+    "journal": "Vision Research, 61:95-99",
+    "link": "http://www.sciencedirect.com/science/article/pii/S0042698911003816"
+},
+{
+    "title": "Inhibitory plasticity balances excitation and inhibition in sensory pathways and memory networks",
+    "author": "T. Vogels*, H. Sprekeler*, F. Zenke, C. Clopath and W. Gerstner",
+    "year": "2011",
+    "journal": "Science, 334:1569-1573",
+    "link": "http://lcn.epfl.ch/~vogels/"
+},
+{
+    "title": "Paradoxical evidence integration in rapid decision processes",
+    "author": "J. Rüter, N. Marcille, H. Sprekeler, W. Gerstner and M. Herzog",
+    "year": "2011",
+    "journal": "PLoS Computational Biology, 8(2):e1002382",
+    "link": "https://itb.biologie.hu-berlin.de/~sprekeler/data/paper/Rueter11.pdf"
+},
+{
+    "title": "On the Relation of Slow Feature Analysis and Laplacian Eigenmaps",
+    "author": "H. Sprekeler",
+    "year": "2011",
+    "journal": "Neural Computation 23:3287-3302",
+    "link": "http://www.mitpressjournals.org/doi/pdf/10.1162/NECO_a_00214"
+},
+{
+    "title": "A Theory of Slow Feature Analysis for Transformation-Based Input Signals with an Application to Complex Cells",
+    "author": "H. Sprekeler and L. Wiskott",
+    "year": "2011",
+    "journal": "Neural Computation 23:303-335",
+    "link": "https://itb.biologie.hu-berlin.de/~sprekeler/data/paper/Sprekeler11a.pdf"
+},
+{
+    "title": "Functional Requirements for Reward-modulated Spike Timing-Dependent Plasticity",
+    "author": "N. Fremaux*, H. Sprekeler* and W. Gerstner",
+    "year": "2010",
+    "journal": "Journal of Neuroscience 30:13326-13337",
+    "link": "http://infoscience.epfl.ch/record/153015/files/13326.pdf"
+},
+{
+    "title": "Slow Feature Analysis",
+    "author": "L. Wiskott, P. Berkes, M. Franzius, H. Sprekeler and N. Wilbert",
+    "year": "2010",
+    "journal": "Scholarpedia, 6(4):5282",
+    "link": "http://www.scholarpedia.org/article/Slow_feature_analysis"
+},
+{
+    "title": "Code-Specific Policy-Gradient Rules for Spiking Neurons",
+    "author": "H. Sprekeler, G. Hennequin and W.Gerstner",
+    "year": "2009",
+    "journal": "Advances in Neural Information Processing Systems 22 (NIPS 2009)",
+    "link": "http://books.nips.cc/papers/files/nips22/NIPS2009_0595.pdf"
+},
+{
+    "title": "Predictive Coding and the Slowness Principle: An Information-Theoretic Approach",
+    "author": "F. Creutzig and H. Sprekeler",
+    "year": "2008",
+    "journal": "Neural Computation 20:1026-41",
+    "link": "https://itb.biologie.hu-berlin.de/~sprekeler/data/paper/CreutzigSprekeler08.pdf"
+},
+{
+    "title": "Slowness and Sparseness lead to Place, Head-Direction and Spatial-View Cells",
+    "author": "M. Franzius*, H. Sprekeler* and L. Wiskott",
+    "year": "2007",
+    "journal": "Neural Computation 20:1026-41",
+    "link": "https://itb.biologie.hu-berlin.de/~sprekeler/data/paper/FranziusSprekelerWiskott_PLCB07.pdf"
+},
+{
+    "title": "Slowness: An Objective for Spike-Timing-Dependent Plasticity?",
+    "author": "H. Sprekeler, C. Michaelis and L. Wiskott",
+    "year": "2007",
+    "journal": "PLoS Computational Biology 3(6):e112",
+    "link": "https://itb.biologie.hu-berlin.de/~sprekeler/data/paper/Sprekeler_PLCB07.pdf"
+},
+{
+    "title": "Positive Correlations in Tunneling through coupled Quantum Dots",
+    "author": "G. Kießlich, H. Sprekeler, A. Wacker, and E. Schöll",
+    "year": "2004",
+    "journal": "Semiconductor Science and Technology 19, S 37",
+    "link": "http://xxx.lanl.gov/abs/cond-mat/0309027"
+},
+{
+    "title": "Coulomb Effects in Tunneling through a Quantum Dot Stack",
+    "author": "H. Sprekeler, G. Kießlich, A. Wacker, and E. Schöll",
+    "year": "2004",
+    "journal": "Phys. Rev. B 69, 125328",
+    "link": "http://xxx.lanl.gov/abs/cond-mat/0309696"
+}
+]

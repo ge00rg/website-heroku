@@ -1,0 +1,57 @@
+---
+layout: default
+---
+<article {% if page.banner-img %}class="feature-image"{% endif %}>
+    <header id="main" style="background-image: url('{{ site.baseurl }}/assets/img/banners/{{ page.banner-img }}')">
+        <h2 id="{{ page.title | cgi_escape }}" class="title">{{ page.title }}</h2>
+        <p class="meta">
+            {{ page.date | date: "%B %-d, %Y" }}
+            {% if page.author %} - {{ page.author }}{% endif %}
+        </p>
+    </header>
+
+    <div class="member-container">
+        <div class="memberimg">
+            <img src="{{ site.baseurl }}/assets/img/members/{{ page.img }}">
+            <span class="contact-info" style="margin-left: 0;">
+                {% if page.room %}Room: {{page.room}}{% endif %}
+                {% if page.tel %}Tel.: {{page.tel}}{% endif %}
+                {% if page.fax %}Fax: {{page.fax}}{% endif %}
+                {% if page.email %}{{page.email}}{% endif %}
+            </span>
+        </div>
+
+        <div class="membertxt">
+            {{page.content}}
+        </div>
+    </div>
+</article>
+
+<!-- Disqus -->
+{% if site.theme_settings.disqus_shortname %}
+    <div class="comments">
+        {% include disqus.html %}
+    </div>
+{% endif %}
+
+<!-- Post navigation -->
+{% if site.theme_settings.post_navigation %}
+    {% include post_nav.html %}
+{% endif %}
+
+<style>
+.member-container{
+    float: left;
+}
+.memberimg{
+    float: left;
+    width: 250px;
+}
+.memberimg img{
+    display: block;
+    width: 100%;
+}
+.membertxt{
+    overflow: hidden;
+}
+</style>

@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<style>
+.feature-image header{
+    background-image: url('{{ site.baseurl }}/assets/img/banners/{{ page.banner-img }}')
+}
+@media screen and (max-width: 800px) {
+    .feature-image header{
+        background-image: url('')
+    }
+}
+</style>
+
+<article {% if page.banner-img %}class="feature-image"{% endif %}>
+    <header id="main">
+        <h1 align="left" id="{{ page.title | default: "" | cgi_escape }}" class="title">
+            {{ page.title }}
+        </h1>
+    
+        {% if page.subtitle %}
+            <h2 align="left" class="subtitle">{{ page.subtitle }}</h2>
+        {% endif %}
+      
+    </header>
+    <section class="post-content">
+        {% if page.bootstrap %}
+            <div class="bootstrap-iso">
+        {% endif %}
+        {{ content }}
+        {% if page.bootstrap %}
+            </div>
+        {% endif %}
+    </section>
+    
+    
+  <!-- Tag list for portfolio -->
+  {% capture tag_list %}{{ page.tags | join: "|"}}{% endcapture %}
+  {% include tags_list.html tags=tag_list %}
+    
+</article>

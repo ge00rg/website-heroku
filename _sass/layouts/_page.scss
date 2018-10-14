@@ -1,0 +1,76 @@
+h1.title {
+    @extend .header-txt-shadow;
+}
+
+h2.title {
+    text-align: left;
+}
+
+.subtitle {
+    font-weight: normal;
+    margin-top: 5px;
+    text-shadow: 1px 1px 2px $text-shadow;
+}
+
+.publications {overflow-x: hidden; table-layout: fixed; width: 100%;}
+.publications tr{  border-bottom:1pt solid black; width: 100%;}
+.publications td{border: none;}
+.publications th{border: none;}
+.publications td{cursor: pointer;}
+.publications .extender{display:inline; float: right;}
+
+#talks table{overflow-x: hidden; border-collapse:collapse;}
+#talks tr{  border-bottom:1pt solid black;}
+#talks .spacer{height: 10px; outline: none;}
+#talks td{border: none;}
+#talks th{border: none;}
+#talks td{cursor: pointer;}
+#talks figcaption{text-align: center;}
+#talks #date{display:inline; color: lighten($text-color, 30%); text-transform: uppercase; font-size: 15px; float: right;}
+
+//Shared css in _post.scss
+
+#address {width:30%; float:left; padding-bottom: 15px;}
+#map {position: relative; hieght: 0; overflow: hidden; width:60%; float:right; padding-bottom: 50%; margin: 10px 0px 0px 0px;}
+#contact {width:30%; float:left; padding-top: 15px; padding-bottom: 30px;}
+#call {width:30%; float:left;}	
+#desc {padding-bottom: 15px;}
+
+#ifr {width: 100% !important; height: 100% !important; position: absolute; top: 0; left: 0;}
+
+#talkfig {
+  display: table;
+  float: left;
+  padding: 50px;
+}
+
+#talkcap {
+  display: table-caption;
+  caption-side: bottom;
+  text-align: center;
+}	
+
+.abstractbox {
+overflow: hidden; 
+display: -webkit-box; 
+-webkit-line-clamp: 2; 
+-webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 860px) {
+    .abstractbox{display:none;}
+
+    #address {clear: both; width: 100%; margin: 30px 0px 0px 0px;}
+    #map {clear: both; width: 100%; padding-top: 15px; margin: 30px 0px 0px 0px;}
+    #contact {width:45%}
+    #call {width:45%; float:right; padding-top: 15px;}
+
+    #talks #date{float: left;}
+    #talks #affil{display: block;}
+    #talks td{width: 300px;}
+    #talks table img{width:100%; height:100%; display:block;}
+
+    #talkfig {clear: left;}
+
+    		
+}
