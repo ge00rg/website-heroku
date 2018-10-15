@@ -1,7 +1,3 @@
----
-hide: true
----
-
 # Website Documentation
 
 ## Table of Contents
