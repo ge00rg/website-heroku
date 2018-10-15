@@ -20,7 +20,8 @@
 
 ### 9. Jobs, Contact and Downloads
 
-## 1. General<a name="general"></a>
+<a name="general"></a>
+## 1. General
 
 The website is built using **Jekyll**, a Ruby based static website generator. It makes use of **YAML**, **markdown** and **LiquidScript** to generate websites. The use of YAML and markdown makes it easy to edit and create content for the website without coding explicit html.
 
