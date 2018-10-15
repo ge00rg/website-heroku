@@ -70,7 +70,7 @@ The part below is markdown, which is basically just text, but where you can also
 <a name="banner"></a>
 ## 2. Banner Images
 
-For all pages except the home page the banner images should be located in `assets/img/banners` . Then we need to indicate that we want to use a particular image in that folder in the file corresponding to the page we want to use it on. All page-files are located in the folder `pages`. Now if we want to change the banner of the news page for example, we open `news.md` and edit (or add, if it doesn't exist) the line
+For all except the home page the banner images should be located in `assets/img/banners` . Then we need to indicate that we want to use a particular image in that folder in the file corresponding to the page we want to use it on. All page-files are located in the folder `pages`. Now if we want to change the banner of the news page for example, we open `news.md` and edit (or add, if it doesn't exist) the line
 
 ```yaml
 banner-img: "news_image.JPG"
@@ -121,7 +121,7 @@ To change the research project categories (currently) 'Synaptic', 'Cellular', 'M
 
 ### Navigation Images
 
-To change the images associted with these categories, edit the `images` list in `pages/1_research` (it has the same order as the `headings` list) with the names of the desired images, which should be located in `assets/img/research`.
+To change the images associted with these categories, edit the `images` list in `pages/1_research.md` (it has the same order as the `headings` list) with the names of the desired images, which should be located in `assets/img/research`.
 
 <a name="team"></a>
 ## 5. Team
@@ -143,12 +143,12 @@ tel: +49 123456789
 ---
 ```
 
-The layout is always set to "member_post", the `title` is the name of the person. The `image` entry should be set the name of the desired image (which should be put into the folder `assets/img/members`). These images also should have a height to width ratio of approximately 10:9 (all the current ones are 1000x900px). The `position` entry denotes the position of the person within the group. Currently available are 'Principal Investigator', 'Secretary', 'Postdoctoral Fellow', 'PhD Student', 'Master Student' and 'Alumnus' (set under `position-order` in `pages/2_team`). This entry determines the position title displayed under the member's name, as well as where the member will be displayed, as they are displayed in `position-order`, i.e. first the Principal Investigator, then the Secretary, then all Postdoctorall Fellows and so on. If a position is used that is not in the list, the member will be displayed last, in aplhabetical order. If the position exists in the list, it shoud be matched exactly here. The `permalink` denotes the link under which this site is going to be reachable, i.e. `sprekelerlab.net/denis/` in this case. `room`, `tel` and `email` are optional and self-explanatory.
+The layout is always set to "member_post", the `title` is the name of the person. The `image` entry should be set the name of the desired image (which should be put into the folder `assets/img/members`). These images also should have a height to width ratio of approximately 10:9 (all the current ones are 1000x900px). The `position` entry denotes the position of the person within the group. Currently available are 'Principal Investigator', 'Secretary', 'Postdoctoral Fellow', 'PhD Student', 'Master Student' and 'Alumnus' (set under `position-order` in `pages/2_team.md`). This entry determines the position title displayed under the member's name, as well as where the member will be displayed, as they are displayed in `position-order`, i.e. first the Principal Investigator, then the Secretary, then all Postdoctorall Fellows and so on. If a position is used that is not in the list, the member will be displayed last, in aplhabetical order. If the position exists in the list, it shoud be matched exactly here. The `permalink` denotes the link under which this site is going to be reachable, i.e. `sprekelerlab.net/denis/` in this case. `room`, `tel` and `email` are optional and self-explanatory.
 
 The markdown part afterwards is the short bio of the person in question and is later displayed on their page.
 
 ### Position Order
-To change the order of positions within the group, edit `position-order` in `pages/2_team`. It is also possible to add or remove position entries. Everything not on this list is displayed last in alphabetical order.
+To change the order of positions within the group, edit `position-order` in `pages/2_team.md`. It is also possible to add or remove position entries. Everything not on this list is displayed last in alphabetical order.
 
 <a name="publications"></a>
 ## 6. Publications
@@ -165,30 +165,26 @@ All publications haven an entry in `_data/publications.json`, which contains a l
 }
 ```
 
-Edit and create new entries at your heart's delight.
+Edit and create new entries at your heart's delight (while preserving the correct syntax of course).
 
 The publications are later automatically sorted by year, but **within a year the order within the file is preserved**. 
 
 <a name="news"></a>
 ## 7. News
 
-News posts are all located in `_posts/`.  The name of the file always follows the follwing convention: `year-month-day-title.md`, for example `2013-11-18-im-a-blog-post.md`. The date is important and used later, the title is not.
+News posts are all located in `_posts/`.  The name of the file always follows the follwing convention: `year-month-day-title.md`, for example `2013-11-18-im-a-blog-post.md`. The date is important and used for the date displyaed with the post, the title is not as it is set within the YAML header of the file for formatting reasons.
 
 Each such file has a YAML header:
-
-```
-
-```
 
 ```yaml
 ---
 layout: post
 title: Feature images
-thumbnail: "assets/img/thumbnails/desk-messy.jpeg"
+thumbnail: "desk-messy.jpeg"
 ---
 ```
 
-The layout is always post. The title is the title of the post. The thumbnail is optional and should  be set to the path of the desired image (by convention in the folder `assets/img/thumbnails`).
+The layout is always post. The title is the title of the post. The `thumbnail` is optional and should  be set to the name of the desired image (which should be placed in the folder `assets/img/thumbnails`).
 
 The markdown after the YAML header contains the content of the news post.
 
@@ -197,7 +193,7 @@ To make a new news post, simply create or copy a file with this structure and ed
 <a name="events"></a>
  ## 8. Events
 
-Each event has its own file, and all of those are located in `_talks`[todo].
+Each event has its own file, and all of those are located in `_talks`.
 
 The YAML header of these `.md` files looks like this:
 
@@ -213,9 +209,9 @@ priority: September 18, 2018
 ---
 ```
 
-layout is always post_event. Title, date, speaker, location and affiliation (of the speaker) are self-explanatory. **It is important that the date (which can, but does not have to contain a time) is always written in the same format (like written here).**
+layout is always set to 'post_event'. `title`, `date`, `speaker`, `location` and `affiliation` (of the speaker) are self-explanatory. **It is important that the date (which can, but does not have to contain a time) is always written in the same format (as written above).** Note that in `date` the time `00:00` will not work (it will not get displayed).
 
-Priority is an optional entry that requires some more explanation. The home page of the website always displays the three next events. Usually that is good enough, but sometimes we want to advertise important events early, even if they lie far in the future and are not among the three next ones. In that case we can set priority to a date, and after this date passes, this event is considered as having priority, meaning that is is displayed on the home page regardless of how far in the future it lies.
+`priority` is an optional entry that requires some more explanation. The home page of the website always displays the three next events. Usually that is good enough, but sometimes we want to advertise important events early, even if they lie far in the future and are not among the three next ones. In that case we can set priority to a date, and after this date passes, this event is considered as having priority, meaning that is is displayed on the home page regardless of how far in the future it lies.
 
 <a name="rest"></a>
 ## 9. Jobs, Contact and Downloads
@@ -224,12 +220,12 @@ To change the contents of the jobs page, simply edit the markdown portion of  `p
 
 The same goes for Downloads, the file is `pages/8_downloads.md`.
 
-The contact file ( `pages/7_contact.md`) is encoded in html. To edit it, simply edit the text according to html-conventions.
+The contact file ( `pages/7_contact.md`) is written in html. To edit it, simply edit the text according to html-conventions.
 
 <a name="impressum"></a>
 ## 10. Impressum
 
-tbd
+To change the impressum page, edit `pages/impressum.md` (plain markdown).
 
 <a name="notes"></a>
 ## 11. Notes for later Webmasters
