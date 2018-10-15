@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
-### 1. General
+1. [General](#General)
 
-### 2. Banner Images
+2. [Banner Images]
 
 ### 3. Mission Statement
 
