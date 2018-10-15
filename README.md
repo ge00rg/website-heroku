@@ -4,21 +4,25 @@
 
 1. [General](#general)
 
-2. [Banner Images]
+2. [Banner Images](#banner)
 
-### 3. Mission Statement
+3. [Mission Statement](#mission)
 
-### 4. Research
+4. [Research](#research)
 
-### 5. Team
+5. [Team](#team)
 
-### 6. Publications
+6. [Publications](#publications)
 
-### 7. News
+7. [News](#news)
 
-### 8. Events
+8. [Events](#events)
 
-### 9. Jobs, Contact and Downloads
+9. [Jobs, Contact and Downloads](#rest)
+
+10. [Impressum](#impressum)
+
+11. [Notes for the Webmaster](#notes)
 
 <a name="general"></a>
 ## 1. General
@@ -56,6 +60,7 @@ The part between the '---' characters is the YAML header. It allows to define va
 
 The part below is markdown, which is basically just text, but where you can also insert links and images and tables and so on. We are mostly using it for text and for the fact that when html is generated from it, formatting is preserved.
 
+<a name="banner"></a>
 ## 2. Banner Images
 
 For all pages except the home page the banner images should be located in `assets/img/banners` . Then we need to indicate that we want to use a particular image in that folder in the file corresponding to the page we want to use it on. All page-files are located in the folder `pages`. Now if we want to change the banner of the news page for example, we open `news.md` and edit (or add, if it doesn't exist) the line
@@ -68,10 +73,12 @@ where news_image.JPG is the desired image that we put in the `assets/img/banners
 
 For the home page, to change the image we edit the `banner-img ` entry of `index.html` the same way described above.
 
+<a name="mission"></a>
 ## 3. Mission Statement
 
 To change the Mission Statement, open `_config.yml` and edit the line `text: `.
 
+<a name="research"></a>
 ## 4. Research
 
 ### Projects
@@ -109,6 +116,7 @@ To change the research project categories (currently) 'Synaptic', 'Cellular', 'M
 
 To assign new images in the navigation bar of the research page, edit the `images` list in `pages/1_research.md`. All of the image files have to be out into `assets/img/` [todo].
 
+<a name="team"></a>
 ## 5. Team
 
 For each team member there is a file in `_portfolio` ( [`members`])`todo`]. All of these have a YAML header that looks like this:
@@ -130,6 +138,7 @@ The layout is always member_post, the title is the name of the person. The image
 
 The markdown part afterwards is the short bio of the person in question and is later displayed on their page.
 
+<a name="publications"></a>
 ## 6. Publications
 
 All publications haven an entry in `_data/publications.json`, which contains a list of dictionaries , each of which corresponds to a publication. An entry looks like this:
@@ -148,6 +157,7 @@ Edit and create new entries at your heart's delight.
 
 The publications are later automatically sorted by year, but **within a year the order within the file is preserved**. 
 
+<a name="news"></a>
 ## 7. News
 
 News posts are all located in `_posts/`.  The name of the file always follows the follwing convention: `year-month-day-title.md`, for example `2013-11-18-im-a-blog-post.md`. The date is important and used later, the title is not.
@@ -172,6 +182,7 @@ The markdown after the YAML header contains the content of the news post.
 
 To make a new news post, simply create or copy a file with this structure and edit it to your expectations.
 
+<a name="events"></a>
  ## 8. Events
 
 Each event has its own file, and all of those are located in `_talks`[todo].
@@ -194,6 +205,7 @@ layout is always post_event. Title, date, speaker, location and affiliation (of 
 
 Priority is an optional entry that requires some more explanation. The home page of the website always displays the three next events. Usually that is good enough, but sometimes we want to advertise important events early, even if they lie far in the future and are not among the three next ones. In that case we can set priority to a date, and after this date passes, this event is considered as having priority, meaning that is is displayed on the home page regardless of how far in the future it lies.
 
+<a name="rest"></a>
 ## 9. Jobs, Contact and Downloads
 
 To change the contents of the jobs page, simply edit the markdown portion of  `pages/6_jobs.md`. 
@@ -202,9 +214,11 @@ The same goes for Downloads, the file is `pages/8_downloads.md`.
 
 The contact file ( `pages/7_contact.md`) is encoded in html. To edit it, simply edit the text according to html-conventions.
 
+<a name="impressum"></a>
 ## 10. Impressum
 
 tbd
 
+<a name="notes"></a>
 ## 11. Notes for later Webmasters
 tbd
