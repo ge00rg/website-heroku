@@ -1,7 +1,7 @@
 ---
 layout: member_post
 title: Loreen Hertäg
-img: "Loreen18_crop.jpg"
+img: "Loreen_crop.JPG"
 position: Postdoctoral Fellow
 permalink: /loreen/
 room: MAR 5.015
