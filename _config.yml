@@ -1,4 +1,5 @@
 # SITE CONFIGURATION
+root: /
 baseurl: "/website"
 url: "https://ge00rg.github.io"
 title: MKP # site's title
