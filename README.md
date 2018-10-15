@@ -56,7 +56,14 @@ on graphics processing units and has developed the open source software
 Brian2CUDA.
 ```
 
-The part between the '---' characters is the YAML header. It allows to define variables that are later used to generate a page. These variables, the characters after the colon are going to be used by Jekyll to automatically create Denis' member page.
+The part between the '---' characters is the YAML header. It allows to define variables that are later used to generate a page. These variables, the characters after the colon are going to be used by Jekyll to automatically create Denis' member page. It is important to use the correct syntax here - `variable: value` for simple variables. If the vaule contains certian reserved characters like for example "-", the value should be enclosed in quotation marks. Another syntactic feature of YAML that we use are lists. They are structured as follows:
+```
+list:
+    - item1
+    - item2
+    ...
+```
+It is crucial that there is always a whitespace after the "-", otherwise this will not be recognized as a list.
 
 The part below is markdown, which is basically just text, but where you can also insert links and images and tables and so on. We are mostly using it for text and for the fact that when html is generated from it, formatting is preserved.
 
@@ -83,7 +90,7 @@ To change the Mission Statement, open `_config.yml` and edit the line `text: `.
 
 ### Projects
 
-All research projects are located in the folder `_research/`. Let us look at an example:
+All research projects are located in the folder `_research/`. They are then displayed on the research page onw below the other. Let us look at an example:
 
 ```yml/markdown
 ---
@@ -95,14 +102,14 @@ authors:
     - Henning Sprekeler
     - Filip Vercruysse
 ---
-The  existence  of  specialized  mechanisms  for  burst  generation  in  pyramidal  cells  (PCs)  suggests  that  bursts  are  likely  to  be  an  important  temporal  feature  of  neural  signals.  In L5  PCs  bursts  occur  at  a  low,  but  consistent  rate,  and  are  thought  to  arise  from  active  dendritic  processes.  Given  that  burst  activity  relies  on  dendritic  threshold  mechanisms,  it  appears  likely  that  low  burst  activity  require  homeostatic  control,  but  the  underlying  mechanisms  are  not  resolved.  In  this  research  project  we  model  a  biologically  inspired  circuit  diagram  of  a  self-organized  microcircuit  with  different  inhibitory  cell  types  and  plasticity  rules  to  control  the  burst  and  population  rate  of  PCs.  Our  work  shows  that  inhibitory  plasticity  rules  may  serve  as  building  blocks  to  self-organise  complex  network  architectures  and  allows  us  to  investigate  coding  properties  of  bursting  units  without  the  need  for  tuning  of  input  or  noise  levels. 
+The  existence  of  specialized  mechanisms  for  burst  generation  in  pyramidal  cells  (PCs)  suggests  that  bursts    are  likely  to  be  an  important  temporal  feature  of  neural  signals.  In L5  PCs  bursts  occur  at  a  low,  but    consistent  rate,  and  are  thought  to  arise  from  active  dendritic  processes.  Given  that  burst  activity  relies    on  dendritic  threshold  mechanisms,  it  appears  likely  that  low  burst  activity  require  homeostatic  control,  but  the  underlying  mechanisms  are  not  resolved.  In  this  research  project  we  model  a  biologically  inspired  circuit  diagram  of  a  self-organized  microcircuit  with  different  inhibitory  cell  types  and  plasticity  rules  to  control  the  burst  and  population  rate  of  PCs.  Our  work  shows  that  inhibitory  plasticity  rules  may  serve  as  building  blocks  to  self-organise  complex  network  architectures  and  allows  us  to  investigate  coding  properties  of    bursting  units  without  the  need  for  tuning  of  input  or  noise  levels.   
 ```
 
-`layout` whould always be 'page'. The title is obviously the title of the project. image holds the path to the image displayed with the project. All project images should be placed in the `assets/img/` folder [todo].
+`layout` should always be set to 'page'. The `title` is obviously the title of the project. `image` holds the path to the image displayed with the project. All project images should be placed in the `assets/img/` folder.
 
-parent should be set to one of the four categories listed in the file `pages/1_research.md` under headings; currently 'Synaptic', 'Cellular', 'Microcircuit', 'Behavior'.
+parent should be set to one of the four categories listed in the file `pages/1_research.md` under headings; currently 'Synaptic', 'Cellular', 'Microcircuit', 'Behavior'. They serve to subdivde the project page into these four subcategories; failing to match one of these keywords means that the project will not be displayed.
 
-authors is a list of authors that work on the project. These names should exactly correspond with the `title` entry of a file in the _portfolio[_members][todo] folder, in other words, if said person is in the group, its name has to be written the same way here as for the team-page (see entry on the team page).
+`authors` is a list of authors that work on the project. These names should exactly correspond with the `title` entry of a file in the `_members` folder, or in other words, exactly match a name of a member of the group as used on the team page.
 
 The markdown contains a description of the project.
 
