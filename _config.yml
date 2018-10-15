@@ -1,0 +1,130 @@
+# SITE CONFIGURATION
+baseurl: "/website"
+url: "https://ge00rg.github.io"
+title: MKP # site's title
+description: "Modelling of Cognitive Processes" # used by search engines
+
+# TEXT
+heading: Mission Statement
+text: We investigate the neuronal basis of cognitive abilities such as perception, learning and memory, and decision making. To this end, we use mathematical and computational methods to bridge gaps between the microscopic level of synapses, neurons and neuronal networks and the cognitive level. A particular focus lies on how changes on the neuronal level — for example synaptic plasticity — allow our brain to dynamically adjust to environmental requirements.
+
+# THEME-SPECIFIC CONFIGURATION
+theme_settings:
+  # Meta
+  title: SPREKELER lab  # blog's title
+  avatar: 
+  favicon: assets/img/logo_bin_stripes.png
+  gravatar: # Email MD5 hash
+
+  # Header and footer text
+  header_text: > #two or three lines to describe your site
+     <p></p>
+  header_text_feature_image: assets/img/march.JPG
+  footer_text: >
+    <a href="https://www.cognition.tu-berlin.de/menue/teaching/">Teaching</a> | <a href="">Contact</a>
+
+  # Icons
+  rss: false  # Make sure you created a feed.xml with feed.xml layout
+  email_address: # Full email address, e.g. "sam@example.com"
+  behance:
+  bitbucket:
+  dribbble:
+  facebook:
+  flickr:
+  gitlab:
+  github: 
+  google_plus:
+  instagram:
+  keybase:
+  linkedin:  # Full URL
+  pinterest:
+  reddit:
+  soundcloud:
+  stack_exchange:  # Full URL
+  steam:
+  tumblr:
+  twitter: # "twitter username"
+  vimeo:
+  wordpress:
+  youtube:
+  
+  # Sharing options
+  share_buttons:
+    facebook: true
+    twitter: true
+    google_plus: true
+    tumblr:
+    pinterest:
+    pocket:
+    reddit: true
+    linkedin:
+    wordpress:
+    email: true
+
+  # Scripts / Features 
+  google_analytics: # Tracking ID, e.g. "UA-000000-01"
+  disqus_shortname:
+  katex: true # Enable if using math markup
+  
+  special_page:
+    search: 
+      icon: "search" # Assuming page link and icon are the same
+      enabled: true
+    tags:
+      icon: "tags"
+      enabled: false
+  
+  # Localization strings
+  str_follow_on: "Follow on"
+  str_rss_follow: "Follow RSS feed"
+  str_share_on: "Share on"
+  str_add_to: "Add to"
+  str_email: "Email"
+  str_tweet: "Tweet"
+  str_pin_it: "Pin it"
+  str_next_post: "Next Member"
+  str_previous_post: "Previous Member"
+  str_next_page: "Next"
+  str_previous_page: "Prev"
+  str_continue_reading: "Continue reading"
+  str_javascript_required_disqus: "Please enable JavaScript to view comments."
+
+  # Colours, typography and padding
+  # Open the "_sass > base" folder, and open "_variables.scss"
+  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
+
+  # Post navigation
+  post_navigation: true
+  
+  
+# PAGINATION
+paginate: 5
+paginate_path: "blog/page:num"
+
+
+# COLLECTIONS
+collections:
+  members:
+    output: true
+    permalink: /:collection/:name
+  talks:
+    output: true
+    permalink: /:collection/:name
+  research:
+    output: true
+    permalink: /:collection/:name
+
+
+# BUILD SETTINGS
+markdown: kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: :compressed
+plugins: [jekyll-paginate, jekyll-seo-tag]
+#theme: type-on-strap # Uncomment if using the theme as a jekyll theme gem
+exclude: [vendor, "Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", "LICENSE", "README.md", "screenshot.png", "package.json", "node_modules", "gulpfile.js", ".idea/*"]
+
+future: ture
+
+emergency-img: "assets/img/qm.png"
