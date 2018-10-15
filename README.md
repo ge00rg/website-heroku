@@ -56,7 +56,7 @@ on graphics processing units and has developed the open source software
 Brian2CUDA.
 ```
 
-The part between the '---' characters is the YAML header. It allows to define variables that are later used to generate a page. These variables, the characters after the colon are going to be used by Jekyll to automatically create Denis' member page. It is important to use the correct syntax here - `variable: value` for simple variables. If the vaule contains certian reserved characters like for example "-", the value should be enclosed in quotation marks. Another syntactic feature of YAML that we use are lists. They are structured as follows:
+The part between the '---' characters is the YAML header. It allows to define variables that are later used to generate a page. These variables, the characters after the colon are going to be used by Jekyll to automatically create Denis' member page. It is important to use the correct syntax here - `variable: value` for simple variables. If the vaule contains certian reserved characters like for example "-", the whole value should be enclosed in quotation marks. Another syntactic feature of YAML that we use are lists. They are structured as follows:
 ```
 list:
     - item1
