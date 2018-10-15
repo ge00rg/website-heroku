@@ -37,7 +37,7 @@ Now follows a simple example of YAML and markdown:
 ---
 layout: member_post
 title: Denis Alevi
-img: "assets/img/denis_crop.JPG"
+img: "denis_crop.JPG"
 position: Master Student
 permalink: /denis/
 room: MAR 5.014
@@ -105,7 +105,7 @@ authors:
 The  existence  of  specialized  mechanisms  for  burst  generation  in  pyramidal  cells  (PCs)  suggests  that  bursts    are  likely  to  be  an  important  temporal  feature  of  neural  signals.  In L5  PCs  bursts  occur  at  a  low,  but    consistent  rate,  and  are  thought  to  arise  from  active  dendritic  processes.  Given  that  burst  activity  relies    on  dendritic  threshold  mechanisms,  it  appears  likely  that  low  burst  activity  require  homeostatic  control,  but  the  underlying  mechanisms  are  not  resolved.  In  this  research  project  we  model  a  biologically  inspired  circuit  diagram  of  a  self-organized  microcircuit  with  different  inhibitory  cell  types  and  plasticity  rules  to  control  the  burst  and  population  rate  of  PCs.  Our  work  shows  that  inhibitory  plasticity  rules  may  serve  as  building  blocks  to  self-organise  complex  network  architectures  and  allows  us  to  investigate  coding  properties  of    bursting  units  without  the  need  for  tuning  of  input  or  noise  levels.   
 ```
 
-`layout` should always be set to 'page'. The `title` is obviously the title of the project. `image` holds the path to the image displayed with the project. All project images should be placed in the `assets/img/` folder.
+`layout` should always be set to 'page'. The `title` is obviously the title of the project. `image` holds the name of the image displayed with the project. All project images should be placed in the `assets/img/research` folder.
 
 parent should be set to one of the four categories listed in the file `pages/1_research.md` under headings; currently 'Synaptic', 'Cellular', 'Microcircuit', 'Behavior'. They serve to subdivde the project page into these four subcategories; failing to match one of these keywords means that the project will not be displayed.
 
@@ -117,22 +117,24 @@ To create a new project, just create a new file with this structure in the `_res
 
 ### Navigation Categories
 
-To change the research project categories (currently) 'Synaptic', 'Cellular', 'Microcircuit', 'Behavior', edit  the `headings` entry of `pages/1_research.md`. Do not forget the whitespace before the '-'!
+To change the research project categories (currently) 'Synaptic', 'Cellular', 'Microcircuit', 'Behavior', edit  the `headings` entry of `pages/1_research.md`. Do not forget the whitespace before the '-'! To change the images associted with these categories, edit the `images` list (it has the same order as the `headings` list) with the names of the desired images, which should be located in `assets/img/research`.
 
 ### Navigation Images
 
-To assign new images in the navigation bar of the research page, edit the `images` list in `pages/1_research.md`. All of the image files have to be out into `assets/img/` [todo].
+To change the images associted with these categories, edit the `images` list in `pages/1_research` (it has the same order as the `headings` list) with the names of the desired images, which should be located in `assets/img/research`.
 
 <a name="team"></a>
 ## 5. Team
 
-For each team member there is a file in `_portfolio` ( [`members`])`todo`]. All of these have a YAML header that looks like this:
+### Member Entries
+
+For each team member there is a file in `_members`. All of these have a YAML header that looks like this:
 
 ```yaml
 ---
 layout: member_post
 title: Denis Alevi
-img: "assets/img/denis_crop.JPG"
+img: "denis_crop.JPG"
 position: Master Student
 permalink: /denis/
 room: MAR 5.014
@@ -141,9 +143,12 @@ tel: +49 123456789
 ---
 ```
 
-The layout is always member_post, the title is the name of the person. The image should be set the path to the image (which should be in the folder `assets/img`[todo]). These images also should have a height to width ratio of approximately 10:9. The permalink denotes the link under which this site is going to be reachable, i.e. `sprekelerlab.net/denis/` in this case. room, tel and email are optional and self-explanatory.
+The layout is always set to "member_post", the `title` is the name of the person. The `image` entry should be set the name of the desired image (which should be put into the folder `assets/img/members`). These images also should have a height to width ratio of approximately 10:9 (all the current ones are 1000x900px). The `position` entry denotes the position of the person within the group. Currently available are 'Principal Investigator', 'Secretary', 'Postdoctoral Fellow', 'PhD Student', 'Master Student' and 'Alumnus' (set under `position-order` in `pages/2_team`). This entry determines the position title displayed under the member's name, as well as where the member will be displayed, as they are displayed in `position-order`, i.e. first the Principal Investigator, then the Secretary, then all Postdoctorall Fellows and so on. If a position is used that is not in the list, the member will be displayed last, in aplhabetical order. If the position exists in the list, it shoud be matched exactly here. The `permalink` denotes the link under which this site is going to be reachable, i.e. `sprekelerlab.net/denis/` in this case. `room`, `tel` and `email` are optional and self-explanatory.
 
 The markdown part afterwards is the short bio of the person in question and is later displayed on their page.
+
+### Position Order
+To change the order of positions within the group, edit `position-order` in `pages/2_team`. It is also possible to add or remove position entries. Everything not on this list is displayed last in alphabetical order.
 
 <a name="publications"></a>
 ## 6. Publications
