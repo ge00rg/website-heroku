@@ -1,5 +1,5 @@
 ---
-hidden: true
+hide: true
 ---
 
 # Website Documentation
