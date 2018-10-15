@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-1. [General](#General)
+1. [General](#general)
 
 2. [Banner Images]
 
@@ -20,7 +20,7 @@
 
 ### 9. Jobs, Contact and Downloads
 
-## 1. General<a name="introduction"></a>
+## 1. General<a name="general"></a>
 
 The website is built using **Jekyll**, a Ruby based static website generator. It makes use of **YAML**, **markdown** and **LiquidScript** to generate websites. The use of YAML and markdown makes it easy to edit and create content for the website without coding explicit html.
 
