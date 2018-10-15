@@ -3,7 +3,6 @@ layout: page
 permalink: /impressum/
 hide: true
 ---
-# Impressum
 ## Herausgeber
 Prof. Dr. Henning Sprekeler  
 MAR 5-3  
