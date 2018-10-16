@@ -54,10 +54,6 @@ header {
     text-transform: none;
     color: $text-color;
 }
-@media screen and (max-width: 800px) {
-    .speaker-span{display: block; background-color: black;}
-    .loc-span{display: block;}
-}
 .affil-span{
     font-size: 1.3em;
     white-space: pre;
@@ -209,4 +205,6 @@ header {
 
 @media screen and (max-width: 800px) {
     .membertxt{clear: both;}
+    .speaker-span{display: block; background-color: black;}
+    .loc-span{display: block;}
     }
