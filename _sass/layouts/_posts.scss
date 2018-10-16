@@ -55,7 +55,7 @@ header {
     color: $text-color;
 }
 @media screen and (max-width: 800px) {
-    .speaker-span{display: block;}
+    .speaker-span{display: block; background-color: black;}
     .loc-span{display: block;}
 }
 .affil-span{
