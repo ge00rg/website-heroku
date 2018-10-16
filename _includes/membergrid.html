@@ -72,7 +72,7 @@ figcaption {
                     <a href="{{ site.baseurl }}{{ member.url }}" data-keyboard="true">
                         <img class="memberpic" src="{{ site.baseurl }}/assets/img/members/{{ member.img }}">
                     </a>
-                    {% assign i=i | plus: 1 %}
+                    {% increment i %}
                     <figcaption>{{member.title}}</figcaption>
                     <figcaption>{{member.position}}</figcaption>
                 </div>
