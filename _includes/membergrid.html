@@ -62,14 +62,17 @@ figcaption {
 }
 </style>
 
+{% assign i=1 %}
+
 <div class="row">
     {% for position in page.position-order %}
         {% for member in site.members %}
             {% if member.position == position %}
-                <div class="column">
+                <div class="column" style="z-index: {{i}}">
                     <a href="{{ site.baseurl }}{{ member.url }}" data-keyboard="true">
                         <img class="memberpic" src="{{ site.baseurl }}/assets/img/members/{{ member.img }}">
                     </a>
+                    {% assign i=i | plus: 1 %}
                     <figcaption>{{member.title}}</figcaption>
                     <figcaption>{{member.position}}</figcaption>
                 </div>
