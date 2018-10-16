@@ -7,10 +7,12 @@
     margin-bottom: 20px;
     padding: 0 8px;
     transition: transform .2s;
+    z-index: 1;
 }
 
 .column:hover {
     transform: scale(1.1);
+    z-index: 2;
 }
 
 .row {
@@ -62,17 +64,14 @@ figcaption {
 }
 </style>
 
-{% assign i=1 %}
-
 <div class="row">
     {% for position in page.position-order %}
         {% for member in site.members %}
             {% if member.position == position %}
-                <div class="column" style="z-index: {{i}}">
+                <div class="column">
                     <a href="{{ site.baseurl }}{{ member.url }}" data-keyboard="true">
                         <img class="memberpic" src="{{ site.baseurl }}/assets/img/members/{{ member.img }}">
                     </a>
-                    {% increment i %}
                     <figcaption>{{member.title}}</figcaption>
                     <figcaption>{{member.position}}</figcaption>
                 </div>
