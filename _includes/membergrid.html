@@ -10,6 +10,11 @@
     transition: transform .2s;
     position: relative;
 }
+    
+.column figure{
+    display: table; 
+    background-color: white;
+}
 
 .column:hover {
     z-index: 5555 !important;
@@ -72,12 +77,12 @@ figcaption {
         {% for member in site.members %}
             {% if member.position == position %}
                 <div class="column">
-                    <figure style="display: table; background-color: white;">
-                    <a href="{{ site.baseurl }}{{ member.url }}" data-keyboard="true">
-                        <img class="memberpic" src="{{ site.baseurl }}/assets/img/members/{{ member.img }}">
-                    </a>
-                    <figcaption>{{member.title}}</figcaption>
-                    <figcaption>{{member.position}}</figcaption>
+                    <figure>
+                        <a href="{{ site.baseurl }}{{ member.url }}" data-keyboard="true">
+                            <img class="memberpic" src="{{ site.baseurl }}/assets/img/members/{{ member.img }}">
+                        </a>
+                        <figcaption>{{member.title}}</figcaption>
+                        <figcaption>{{member.position}}</figcaption>
                     </figure>
                 </div>
             {% endif %} 
@@ -87,11 +92,13 @@ figcaption {
   {% for member in site.members %}
         {% unless page.position-order contains member.position %}
             <div class="column">
-                <a href="{{ site.baseurl }}{{ member.url }}" data-keyboard="true">
-                    <img class="memberpic" src="{{ site.baseurl }}/assets/img/members/{{ member.img }}">
-                </a>
-                <figcaption>{{member.title}}</figcaption>
-                <figcaption>{{member.position}}</figcaption>
+                <figure>
+                    <a href="{{ site.baseurl }}{{ member.url }}" data-keyboard="true">
+                        <img class="memberpic" src="{{ site.baseurl }}/assets/img/members/{{ member.img }}">
+                    </a>
+                    <figcaption>{{member.title}}</figcaption>
+                    <figcaption>{{member.position}}</figcaption>
+                </figure>
             </div>
         {% endunless %} 
   {% endfor %}
