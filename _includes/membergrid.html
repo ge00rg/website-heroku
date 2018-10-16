@@ -73,7 +73,7 @@ figcaption {
         {% for member in site.members %}
             {% if member.position == position %}
                 <div class="column">
-                    <figure style="display: table;">
+                    <figure style="display: table; background-color: black;">
                     <a href="{{ site.baseurl }}{{ member.url }}" data-keyboard="true">
                         <img class="memberpic" src="{{ site.baseurl }}/assets/img/members/{{ member.img }}">
                     </a>
