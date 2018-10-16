@@ -217,7 +217,7 @@ header {
     .speaker-span{display: block;}
     .loc-span{display: block;}
     .white-span{display: none;}
-    .date-span{float: left;}
+    .date-span{float: left; clear: both;}
 }
 @media screen and (min-width: 800px) {
     .break-mobile{display: none;}    
