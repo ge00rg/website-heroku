@@ -15,9 +15,9 @@ layout: default
             <img src="{{ site.baseurl }}/assets/img/members/{{ page.img }}">
             <span class="contact-info" style="margin-left: 0;">
                 {% if page.room %}Room: {{page.room}}{% endif %}
-                {% if page.tel %}Tel.: {{page.tel}}{% endif %}
-                {% if page.fax %}Fax: {{page.fax}}{% endif %}
-                {% if page.email %}{{page.email}}{% endif %}
+                {% if page.tel %}<br>Tel.: {{page.tel}}{% endif %}
+                {% if page.fax %}<br>Fax: {{page.fax}}{% endif %}
+                {% if page.email %}<br>{{page.email}}{% endif %}
             </span>
         </div>
 
