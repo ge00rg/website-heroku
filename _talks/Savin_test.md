@@ -3,6 +3,7 @@ layout: post_event
 title: |+
     Unsupervised learning in neural circuits: emergent computation through the interaction between different forms of plasticity
 date: January 22, 2020
+location: some room
 img:
 speaker: Christina Savin
 affiliation: IST Austria
