@@ -9,7 +9,6 @@
     z-index: 1;
     transition: transform .2s;
     position: relative;
-    background-color: black;
 }
 
 .column:hover {
@@ -73,7 +72,7 @@ figcaption {
         {% for member in site.members %}
             {% if member.position == position %}
                 <div class="column">
-                    <figure style="display: table; background-color: black;">
+                    <figure style="display: table; background-color: white;">
                     <a href="{{ site.baseurl }}{{ member.url }}" data-keyboard="true">
                         <img class="memberpic" src="{{ site.baseurl }}/assets/img/members/{{ member.img }}">
                     </a>
