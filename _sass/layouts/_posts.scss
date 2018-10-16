@@ -54,6 +54,11 @@ header {
     text-transform: none;
     color: $text-color;
 }
+.white-span{
+    white-space: pre;
+    text-transform: none;
+    color: $text-color;
+}
 .affil-span{
     font-size: 1.3em;
     white-space: pre;
@@ -208,4 +213,5 @@ header {
     .affil-span{display: block; background-color: yellow;}
     .speaker-span{display: block; background-color: black;}
     .loc-span{display: block;}
+    .white-span{display: none;}
     }
