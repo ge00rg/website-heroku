@@ -65,7 +65,7 @@ header {
     text-transform: none;
     color: rgba($text-color, 0.5);
 }
-.break-span{clear: both; display: none;}
+.break-span{clear: both; display: block;}
 
 .meta {
     color: rgba($text-color, .5);
@@ -215,5 +215,5 @@ header {
     .speaker-span{display: block;}
     .loc-span{display: block;}
     .white-span{display: none;}
-    .break-span{display: block;}
+    .break-span{display: none;}
 }
