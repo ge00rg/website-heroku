@@ -215,3 +215,6 @@ header {
     .loc-span{display: block;}
     .white-span{display: none;}
 }
+@media screen and (min-width: 800px) {
+    .break-mobile{display: none;}    
+}
