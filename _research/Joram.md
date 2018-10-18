@@ -1,6 +1,6 @@
 ---
 layout: page
-title: High Dimensional Data Analysis
+title: Perceptual Decision Making
 image: "joram_diag.png"
 parent: "Cellular"
 authors:
