@@ -4,7 +4,6 @@ title: Memory transformations in a mechanistic model of systems memory consolida
 image: "diag_denis.jpg"
 parent: "Synaptic"
 authors:
-    - Henning Sprekeler
     - Denis Alevi
 ---
 In this project we try to understand how episodic to semantic memory
