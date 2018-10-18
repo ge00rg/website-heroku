@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New visiting PhD student: Christopher Currin on spiking Epilepsy!"
+tags: [member]
 ---
 
 Chris is doing his PhD in the Raimondo lab in Cape Town, South Africa, where he
