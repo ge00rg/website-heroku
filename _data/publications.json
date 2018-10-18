@@ -4,7 +4,7 @@
     "author": "R. Naud, H. Sprekeler",
     "year": "2018",
     "journal": "PNAS, 115(27):E6329-E6338",
-    "link" : "chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/http://www.pnas.org/content/pnas/early/2018/06/21/1720995115.full.pdf"
+    "link" : "http://www.pnas.org/content/pnas/early/2018/06/21/1720995115.full.pdf"
 },
 {
     "title": "Memory replay in balanced recurrent networks",
@@ -25,14 +25,14 @@
     "title": "Nonlinear Bayesian filtering and learning: a neuronal dynamics for perception",
     "author": "A. Kutschireiter, S.C.  Surace, H.  Sprekeler, J.P.  Pfister",
     "year": "2017",
-    "journal": "Current Opinion in Neurobiology 43, 198-203",
+    "journal": "Scientific Reports 7:8722, DOI:10.1038/s41598-017-06519-y",
     "link": "https://www.nature.com/articles/s41598-017-06519-y.pdf"
 },
 {
     "title": "Functional consequences of inhibitory plasticity: homeostasis, the excitation-inhibition balance and beyond ",
     "author": "H. Sprekeler",
     "year": "2017",
-    "journal": "Scientific Reports 7:8722, DOI:10.1038/s41598-017-06519-y",
+    "journal": "Current Opinion in Neurobiology 43, 198-203",
     "link": "http://ac.els-cdn.com/S0959438817300909/1-s2.0-S0959438817300909-main.pdf?_tid=308ef4a2-670e-11e7-bc61-00000aacb35d&acdnat=1499869810_74882c9f1e450688963c89b5d87c0d14"
 },
 {
@@ -96,7 +96,7 @@
     "author": "T. Vogels*, H. Sprekeler*, F. Zenke, C. Clopath and W. Gerstner",
     "year": "2011",
     "journal": "Science, 334:1569-1573",
-    "link": "http://lcn.epfl.ch/~vogels/"
+    "link": "http://science.sciencemag.org/content/sci/334/6062/1569.full.pdf"
 },
 {
     "title": "Paradoxical evidence integration in rapid decision processes",
@@ -138,7 +138,7 @@
     "author": "H. Sprekeler, G. Hennequin and W.Gerstner",
     "year": "2009",
     "journal": "Advances in Neural Information Processing Systems 22 (NIPS 2009)",
-    "link": "http://books.nips.cc/papers/files/nips22/NIPS2009_0595.pdf"
+    "link": "http://papers.nips.cc/paper/3733-code-specific-policy-gradient-rules-for-spiking-neurons.pdf"
 },
 {
     "title": "Predictive Coding and the Slowness Principle: An Information-Theoretic Approach",
