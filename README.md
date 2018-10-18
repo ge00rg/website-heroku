@@ -172,7 +172,7 @@ The publications are later automatically sorted by year, but **within a year the
 <a name="news"></a>
 ## 7. News
 
-News posts are all located in `_posts/`.  The name of the file always follows the follwing convention: `year-month-day-title.md`, for example `2013-11-18-im-a-blog-post.md`. The date is important and used for the date displyaed with the post, the title is not as it is set within the YAML header of the file for formatting reasons.
+News posts are all located in `_posts/`.  The name of the file always follows the following convention: `year-month-day-title.md`, for example `2013-11-18-im-a-blog-post.md`. The date is important and used for the date displyaed with the post, the title is not as it is set within the YAML header of the file for formatting reasons.
 
 Each such file has a YAML header:
 
@@ -193,7 +193,7 @@ To make a new news post, simply create or copy a file with this structure and ed
 <a name="events"></a>
  ## 8. Events
 
-Each event has its own file, and all of those are located in `_talks`.
+Each event has its own file, and all of those are located in `_talks`.  The name of the file always follows the following convention: `year-month-day-lastname-firstname.md`, for example `2013-11-18-jones-sarah.md`.
 
 The YAML header of these `.md` files looks like this:
 

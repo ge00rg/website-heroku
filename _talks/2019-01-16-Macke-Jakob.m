@@ -7,5 +7,4 @@ location: Bernstein Center, main lecture hall
 affiliation: TU München)
 ---
 
-[Bernstein Center, Philippstr. 13, Haus 6, 10115 Berlin](https://www.bccn-berlin.de/how-to-reach-bccn.html)
 
