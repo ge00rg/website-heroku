@@ -6,6 +6,7 @@ position: Postdoctoral Fellow
 permalink: /filip/
 room: MAR 5.016
 tel: +49 30 314 24391
+email: filipvercruysse@gmail.com
 ---
 <i>Nothing in neocortical computation makes sense except in light of integrating sensory information with stored representations of the world</i>
 
