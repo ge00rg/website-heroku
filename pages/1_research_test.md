@@ -8,4 +8,4 @@ headings:
     - Plasticity
     - Behavior
 --- 
-{% include researchnav_v2 %}
+{% include researchnav_v2.html %}
