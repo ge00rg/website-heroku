@@ -95,6 +95,8 @@ a.head:hover{
     .cattext{
       position: absolute;
       z-index: 2;
+        -webkit-filter: drop-shadow( -1px 1px 1px #fff ); 
+            filter: drop-shadow( -1px 1px 1px #fff );
       transition: 0.1s linear;
     }
     .cat1text{
@@ -110,25 +112,16 @@ a.head:hover{
       top: 130px;
     }
     .int1text{
-      left: 150px;
-      top: 265px;
+      left: 175px;
+      top: 140px;
       z-index: 6;
-      background-color: #9f7474;
       display: none;
     }
     .int2text{
-      left: 340px;
-      top: 265px;
+      left: 355px;
+      top: 140px;
       z-index: 6;
-      background-color: #ae9b5c;
       display: none;
-    }
-    .cat1text, .cat2text, .cat3text{
-      -webkit-filter: drop-shadow( -1px 1px 1px #fff ); 
-            filter: drop-shadow( -1px 1px 1px #fff );
-    }
-    .int1text, .int2text{
-      border-radius: 5%;
     }
     .venn:hover{
       transform: scale(1.3);
