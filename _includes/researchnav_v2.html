@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div class="catwrap"><div class="cattext cat1text">Inhibition</div><img src="cat1.svg" class="venn ellipse cat1"></div>
+    <div class="catwrap"><div class="cattext cat2text">Plasticity</div><img src="cat2.svg" class="venn ellipse cat2"></div>
+    <div class="catwrap"><div class="cattext cat3text">Behavior</div><img src="cat3.svg" class="venn ellipse cat3"></div>
+    <div class="catwrap"><div class="cattext int1text">Inhibition+Plasticity</div><img src="int1.svg" class="venn inter int1"></div>
+    <div class="catwrap"><div class="cattext int2text">Plasticity+Behavior</div><img src="int2.svg" class="venn inter int2"></div>
+  </body>
+  <style>
+    .venn{
+      transform: scale(3);
+      position: absolute;
+      opacity: 0.4;
+      z-index: 1;
+      transition: 0.1s linear;
+    }
+    .ellipse{
+      top: 60px; 
+      width: 75px; 
+      height: 45px;
+    }
+    .cat1{
+      left: 80px;
+     
+    }
+    .cat2{
+      left: 215px;
+    }
+    .cat3{
+      left: 350px;
+    }
+    .inter{
+      position: absolute; 
+      top: 64.52px; 
+      width: 30px;
+      opacity: 0;
+    }
+    .int1{
+      left: 170px; 
+    }
+    .int2{
+      left: 305px; 
+    }
+    .catwrap{
+    }
+    .cattext{
+      position: absolute;
+      z-index: 2;
+      transition: 0.1s linear;
+    }
+    .cat1text{
+      left: 60px;
+      top: 70px;
+    }
+    .cat2text{
+      left: 225px;
+      top: 30px;
+    }
+    .cat3text{
+      left: 385px;
+      top: 70px;
+    }
+    .int1text{
+      left: 120px;
+      top: 160px;
+      z-index: 6;
+      background-color: #9f7474;
+      display: none;
+    }
+    .int2text{
+      left: 260px;
+      top: 160px;
+      z-index: 6;
+      background-color: #ae9b5c;
+      display: none;
+    }
+    .venn:hover{
+      transform: scale(3.7);
+      opacity: 0.7;
+      -webkit-filter: drop-shadow( -2px 2px 2px #000 ); 
+            filter: drop-shadow( -2px 2px 2px #000 );
+    }
+    .inter:hover{
+      opacity:1;
+      transform: scale(3.9);
+      z-index: 5;
+    }
+    .catwrap:hover .cattext{
+      transform: scale(1.25);
+    }
+    .catwrap:hover .int1text{
+      display: inline;
+    }
+    .catwrap:hover .int2text{
+      display: inline;
+  </style>
+</html>
