@@ -162,24 +162,6 @@ a.head:hover{
 {% assign n_headings=page.headings.size %}
 {% assign col_width=100|divided_by:n_headings %}
 
-<div class="topnav" id="t-navbar">
-    {% assign i=0 %}
-    {% for heading in page.headings %}
-        <a class="head" href="#{{heading}}">
-            <div class="navcol" style="width: {{col_width}}%;">
-            {% if i < page.headings.size %}
-                <div class="heading">{{heading}}<i class="Chevron"></i></div>
-            {% else %}
-                <div class="heading">{{heading}}</div>
-            {% endif %}
-        <div class="img-container"><img class="project-image" src="{{site.baseurl}}/assets/img/research/{{page.images[i]}}"></div>
-            
-            {% assign i=i|plus:1 %}
-            </div>
-        </a>
-    {% endfor %}
-</div>
-
 <div class="content">
     {% for heading in page.headings %}
         <div style="clear: both;">
