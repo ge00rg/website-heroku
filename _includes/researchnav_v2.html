@@ -1,4 +1,54 @@
 <style>
+    .b2t_link{
+        float: right;
+        font-size: 15px;
+        color: #729ABD;    
+    }
+.speakerfloat {
+  position: absolute;
+  top: 200px;
+  margin-left: 20px;
+  border-radius: 50%;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 50px;
+  -webkit-box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.75);
+  transition: transform .2s;
+}
+@media only screen and (max-width: 600px) {
+    .speakerfloat {
+        background-color: lightblue;
+    }
+}
+.speakerfloat:hover{
+    transform: scale(1.5);
+    z-index: 5;
+}
+    a.anchor {
+    display: block;
+    position: relative;
+    top: -60px;
+    visibility: hidden;
+}
+a.head {
+    text-decoration: none;
+    color: #383838;
+}
+a.head:hover{
+    text-decoration: none;
+    color: #383838;
+}
+.link-list{
+    list-style: none;
+    text-align: left;
+    margin-left: 50px;
+}
+@media screen and (max-width: 780px) {
+    .speakerfloat{display: none;}
+    .project-text{clear: both;}
+}
     .nav-venn{
         position: relative; 
         padding-bottom: 200px; 
@@ -106,4 +156,100 @@
 <div class="catwrap"><div class="cattext cat3text">Behavior</div><img src="{{site.baseurl}}/assets/img/research/cat3.svg" class="venn ellipse cat3"></div>
 <div class="catwrap"><div class="cattext int1text">Inhibition+Plasticity</div><img src="{{site.baseurl}}/assets/img/research/int1.svg" class="venn inter int1"></div>
 <div class="catwrap"><div class="cattext int2text">Plasticity+Behavior</div><img src="{{site.baseurl}}/assets/img/research/int2.svg" class="venn inter int2"></div>
+</div>
+
+{% assign n_rows=2 %}
+{% assign n_headings=page.headings.size %}
+{% assign col_width=100|divided_by:n_headings %}
+
+<div class="topnav" id="t-navbar">
+    {% assign i=0 %}
+    {% for heading in page.headings %}
+        <a class="head" href="#{{heading}}">
+            <div class="navcol" style="width: {{col_width}}%;">
+            {% if i < page.headings.size %}
+                <div class="heading">{{heading}}<i class="Chevron"></i></div>
+            {% else %}
+                <div class="heading">{{heading}}</div>
+            {% endif %}
+        <div class="img-container"><img class="project-image" src="{{site.baseurl}}/assets/img/research/{{page.images[i]}}"></div>
+            
+            {% assign i=i|plus:1 %}
+            </div>
+        </a>
+    {% endfor %}
+</div>
+
+<div class="content">
+    {% for heading in page.headings %}
+        <div style="clear: both;">
+            <a id="{{heading}}" class="anchor"></a>
+            <h2><u>{{heading}}</u></h2>
+            {% for project in site.research %}
+                {% if project.parent == heading %}
+                    <div style="clear: both; overflow-wrap: normal; padding-bottom: 30px;">
+                        <h3 style="margin-bottom: 0;">{{project.title}}<a href="#top" class="b2t_link">Back to top</a></h3>
+                        <h5 style="margin-bottom: 50px;">
+                            {% assign i=0 %}
+                            {% assign authors=project.authors|reverse %}
+                            {% for author in authors %}
+                                {% for member in site.members %}
+                                    {% if author==member.title %}
+                                        {% assign url=member.permalink %}
+                                    {% endif %}
+                                {% endfor %}
+                                {% unless i==0 %}<span style="color: DarkGray;"> ,</span>{% endunless %}
+                                <a href="{{site.baseurl}}{{url}}" style="color: DarkGray;">{{author}}</a>
+                                {% assign i=i | plus: 1 %}
+                            {% endfor %}
+                        </h5>
+                    <div style="position: relative;">
+                        {% if project.image %}
+                            <img src="{{site.baseurl}}/assets/img/research/{{project.image}}" style="float: left; padding: 20px 20px 10px 0px; height: 250px; min-height: 250xpx;">
+                        {% else %}
+                            <img src="{{site.baseurl}}/{{site.emergency-img}}" style="float: left; padding: 20px 20px 10px 0px; height: 250px;">
+                        {% endif %}
+        
+                        {% assign leftpix=-30 %}
+                        {% for author in project.authors %}
+                            {% for member in site.members %}
+                                {% if author==member.title %}
+                                    {% assign url=member.permalink %}
+                                    {% assign img=member.img %}
+                                {% endif %}
+                            {% endfor %}
+                            <a href="{{site.baseurl}}/{{url}}">
+                                <img class="speakerfloat" src="{{site.baseurl}}/assets/img/members/{{img}}" style="left: {{leftpix}}px;">
+                            </a>
+                            {% assign leftpix=leftpix|plus: 35 %}
+                            {% endfor %}
+                        </div>
+                        <div class="project-text">
+                            {{project.content}}
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endfor %}
+</div>
+
+
+<h2 style="text-align: center;">Funded by</h2>
+<div class="row" style="display: flex; align: center;">
+    <div class="column" style="width: 33%;">
+        <a href="https://www.bccn-berlin.de/">
+            <img src="{{site.baseurl}}/assets/img/funding/Bernstein_Award_2011.jpg" style="float: left; width: 400px;">
+        </a>
+    </div>
+    <div class="column" style="width: 33%;">
+        <a href="https://www.einsteinfoundation.de/en/">
+            <img src="{{site.baseurl}}/assets/img/funding/Einstein.png" style="float: left; width: 400px;">
+        </a>
+    </div>
+    <div class="column" style="width: 33%;">
+        <a href="http://www.dfg.de/en/">
+            <img src="{{site.baseurl}}/assets/img/funding/dfg.jpg" style="float: right; width: 400px;">
+        </a>
+    </div>
 </div>
