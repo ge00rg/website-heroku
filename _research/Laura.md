@@ -4,7 +4,6 @@ title: Presynaptic Inhibition
 image: "diag_laura.jpg"
 parents:
     - Inhibition
-    - Plasticity
 authors:
     - Laura Bella Naumann
 ---
