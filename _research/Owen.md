@@ -2,7 +2,9 @@
 layout: page
 title: Owen's Project
 image: "qm.png"
-parent: "Synaptic"
+parents:
+    - Plasticity
+    - Inhibition
 authors:
     - Owen Mackwood
 ---
