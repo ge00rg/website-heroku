@@ -168,7 +168,7 @@ a.head:hover{
             <a id="{{heading}}" class="anchor"></a>
             <h2><u>{{heading}}</u></h2>
             {% for project in site.research %}
-                {% if project.parent == heading %}
+                {% if project.parents[0] == heading %}
                     <div style="clear: both; overflow-wrap: normal; padding-bottom: 30px;">
                         <h3 style="margin-bottom: 0;">{{project.title}}<a href="#top" class="b2t_link">Back to top</a></h3>
                         <h5 style="margin-bottom: 50px;">
