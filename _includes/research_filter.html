@@ -1,3 +1,4 @@
 {% for i in page.heading_numbers %}
+  {% assign i=i |plus:0 %}
   {{site.research.headings[i]}}
 {% endfor %}
