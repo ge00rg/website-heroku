@@ -1,9 +1,7 @@
 ---
 layout: research_filter
 hidden: true
-permalink: "/inhibition/"
+permalink: "/research/inhibition/"
 heading_numbers:
   - 1
-  - 2
 ---
-text
