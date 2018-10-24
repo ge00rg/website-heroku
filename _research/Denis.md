@@ -4,6 +4,7 @@ title: Memory transformations in a mechanistic model of systems memory consolida
 image: "diag_denis.jpg"
 parents:
     - Plasticity
+    - Behavior
 authors:
     - Denis Alevi
 ---
