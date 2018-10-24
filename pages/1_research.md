@@ -9,4 +9,4 @@ headings:
     - Behavior
 --- 
 {% include researchnav_v2.html %}
-{% include researchcontent.html %}
+{% include research_main.html %}
