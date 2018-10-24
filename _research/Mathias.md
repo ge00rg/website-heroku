@@ -2,7 +2,8 @@
 layout: page
 title: Sensory Representations and Reinforcement Learning
 image: "mathias_diag2.png"
-parent: "Behavior"
+parents:
+    - Behavior
 authors:
     - Mathias Schmerling
 ---
