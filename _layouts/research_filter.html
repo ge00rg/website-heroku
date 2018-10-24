@@ -4,5 +4,6 @@ layout: default
 {% assign research=site.pages| where:"title","Research" %}
 {% assign research=research[0] %}
 {% for i in page.heading_numbers %}
-  {{research.headings[j]}}
+  {% assign i=i|minus: 1 %}
+  {{research.headings[i]}}
 {% endfor %}
