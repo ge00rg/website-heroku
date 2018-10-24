@@ -45,6 +45,9 @@ a.head:hover{
     text-align: left;
     margin-left: 50px;
 }
+.authorlink:hover .speakerfloat{
+        transform: scale(1.5);
+}
 @media screen and (max-width: 780px) {
     .speakerfloat{display: none;}
     .project-text{clear: both;}
@@ -181,7 +184,7 @@ a.head:hover{
                                     {% endif %}
                                 {% endfor %}
                                 {% unless i==0 %}<span style="color: DarkGray;"> ,</span>{% endunless %}
-                                <a href="{{site.baseurl}}{{url}}" style="color: DarkGray;">{{author}}</a>
+                                <a href="{{site.baseurl}}{{url}}" class="authorlink" style="color: DarkGray;">{{author}}</a>
                                 {% assign i=i | plus: 1 %}
                             {% endfor %}
                         </h5>
