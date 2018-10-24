@@ -2,7 +2,8 @@
 layout: page
 title: Memory transformations in a mechanistic model of systems memory consolidation
 image: "diag_denis.jpg"
-parent: "Synaptic"
+parents:
+    - Plasticity
 authors:
     - Denis Alevi
 ---
