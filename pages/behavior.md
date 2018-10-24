@@ -1,6 +1,6 @@
 ---
 layout: research_filter
-hidden: true
+hide: true
 permalink: "/research/behavior/"
 title: Behavior
 heading_numbers:
