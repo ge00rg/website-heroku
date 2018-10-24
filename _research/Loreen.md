@@ -2,7 +2,8 @@
 layout: page
 title: Functional Role of Different Types of Interneurons in Cortical Microcircuits
 image: "diag_loreen.jpg"
-parent: "Microcircuit"
+parents:
+    - Inhibition
 authors:
     - Loreen Hertäg
 ---
