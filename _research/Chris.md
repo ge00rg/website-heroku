@@ -2,7 +2,9 @@
 layout: page
 title: Plasticity in a Pathological Network
 image: "chris_diag.png"
-parent: "Synaptic"
+parents:
+    - Plasticity
+    - Behavior
 authors:
     - Christopher Brian Currin
 ---
