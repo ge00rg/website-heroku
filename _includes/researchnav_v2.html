@@ -95,6 +95,7 @@
 </style>
 <div class="nav-venn">
 {% assign inhibition=site.pages| where:"title","Inhibition" %}
+     {{inhibition.title}}
 {% assign inhibition_link=inhibition.permalink %}
 <a href="{{site.baseurl}}/{{inhibition_link}}"><div class="catwrap"><div class="cattext cat1text">{{page.headings[0]}}</div><img src="{{site.baseurl}}/assets/img/research/cat1.svg" class="venn ellipse cat1"></div></a>
 <a href=""><div class="catwrap"><div class="cattext cat2text">{{page.headings[1]}}</div><img src="{{site.baseurl}}/assets/img/research/cat2.svg" class="venn ellipse cat2"></div></a>
