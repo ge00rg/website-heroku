@@ -64,12 +64,15 @@ layout: default
         {% if post.priority %}
             {% capture postpriotime %}{{post.priority | date: '%s'}}{% endcapture %}
             {% if postpriotime <= nowunix %}
-                {% if i < max_events %}
-                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                        <span>{{post.speaker}}{% if post.affiliation %} [{{post.affiliation}}]{% endif %}</span><br>
-                        <div class="date">{{post.date | date: '%B %d, %Y'}}</div>
-                    </a>
-                    {% assign i = i | plus:1 %}
+                {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+                {% if posttime > nowunix %}
+                    {% if i < max_events %}
+                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                            <span>{{post.speaker}}{% if post.affiliation %} [{{post.affiliation}}]{% endif %}</span><br>
+                            <div class="date">{{post.date | date: '%B %d, %Y'}}</div>
+                        </a>
+                        {% assign i = i | plus:1 %}
+                    {% endif %}
                 {% endif %}
             {% endif %}
         {% endif %}
