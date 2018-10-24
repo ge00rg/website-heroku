@@ -8,7 +8,7 @@ layout: default
 {% for i in page.heading_numbers %}
   {% assign i=i|minus: 0 %}
   {% assign j=i|minus: 1 %}
-  {{research.headings[j]}}
   {% assign heading_name = research.headings[j] %}
+  {% assign used_headings=used_headings|push:heading_name %}
 {% endfor %}
 {{used_headings}}
