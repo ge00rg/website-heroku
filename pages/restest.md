@@ -1,6 +1,6 @@
 ---
 hidden: true
-permalink: "/{{site.research.headings[0]}}/"
+permalink: "/Inhibition/"
 heading_humbers:
   - 1
   - 2
