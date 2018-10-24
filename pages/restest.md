@@ -1,8 +1,9 @@
 ---
+layout: research_filter
 hidden: true
-permalink: "/Inhibition/"
+permalink: "/inhibition/"
 heading_numbers:
   - 1
   - 2
 ---
-{% include research_filter.html %}
+text
