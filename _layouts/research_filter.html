@@ -4,9 +4,12 @@ layout: default
 {% assign research=site.pages| where:"title","Research" %}
 {% assign research=research[0] %}
 
-{% assign heading_list=site.emtpyArray %}
+{% assign used_headings = '' | split: '' %}
 {% for i in page.heading_numbers %}
   {% assign i=i|minus: 0 %}
   {% assign j=i|minus: 1 %}
   {{research.headings[j]}}
+  {% assign heading_name = research.headings[j] %}
+  {% assign used_headings=used_headings|concat:heading_name %}
 {% endfor %}
+{{used_headings}}
