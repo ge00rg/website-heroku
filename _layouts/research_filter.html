@@ -12,10 +12,11 @@ layout: default
   {% assign used_headings=used_headings|push:heading_name %}
 {% endfor %}
 {% assign used_headings_rev=used_headings_rev|reverse %}
+{{used_headings_rev}}
 {% for project in site.research %}
   {% if project.parents==used_headings %}
     yes:{{project.parents}}
   {% elsif project.parents==used_headings_rev %}
-    yes
+    yes_reverse
   {% endif %}
 {% endfor %}
