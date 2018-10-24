@@ -128,4 +128,3 @@ exclude: [vendor, "Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", "
 future: ture
 
 emergency-img: "assets/img/qm.png"
-emptyArray: [] # helps creating empty arrays with liquid
