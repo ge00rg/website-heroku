@@ -11,4 +11,8 @@ layout: default
   {% assign heading_name = research.headings[j] %}
   {% assign used_headings=used_headings|push:heading_name %}
 {% endfor %}
-{{used_headings[1]}}
+
+{{used_headings}}
+{% for project in research.projects %}
+  {{project.parents}}
+{% endfor %}
