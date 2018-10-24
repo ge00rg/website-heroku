@@ -3,7 +3,10 @@ layout: default
 ---
 {% assign research=site.pages| where:"title","Research" %}
 {% assign research=research[0] %}
+
+{% assign heading_list=emtpyArray %}
 {% for i in page.heading_numbers %}
-  {% assign i=i|minus: 1 %}
-  {{research.headings[i]}}
+  {% assign i=i|minus: 0 %}
+  {% assign j=i|minus: 1 %}
+  {{research.headings[j]}}
 {% endfor %}
