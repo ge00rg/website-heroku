@@ -2,7 +2,9 @@
 layout: page
 title: Presynaptic Inhibition
 image: "diag_laura.jpg"
-parent: "Synaptic"
+parents:
+    - Inhibition
+    - Plasticity
 authors:
     - Laura Bella Naumann
 ---
