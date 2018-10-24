@@ -15,6 +15,6 @@ layout: default
 {{used_headings}}
 {% for project in site.research %}
   {% if project.parents==used_headings %}
-    yes
+    yes:{{project.parents}}
   {% endif %}
 {% endfor %}
