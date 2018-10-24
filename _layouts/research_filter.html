@@ -11,7 +11,7 @@ layout: default
   {% assign heading_name = research.headings[j] %}
   {% assign used_headings=used_headings|push:heading_name %}
 {% endfor %}
-{% assign used_headings_rev=used_headings_rev|reverse %}
+{% assign used_headings_rev=used_headings|reverse %}
 {{used_headings_rev}}
 {% for project in site.research %}
   {% if project.parents==used_headings %}
