@@ -2,7 +2,9 @@
 layout: page
 title: Models of Spatial Representation
 image: "diag_simon.jpg"
-parent: "Synaptic"
+parents:
+    - Inhibition
+    - Plasticity
 authors:
     - Simon Weber
 ---
