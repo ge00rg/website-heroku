@@ -4,7 +4,7 @@ title: Plasticity in a Pathological Network
 image: "chris_diag.png"
 parents:
     - Plasticity
-    - Behavior
+    - Inhibition
 authors:
     - Christopher Brian Currin
 ---
