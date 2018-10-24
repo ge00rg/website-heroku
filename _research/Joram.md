@@ -2,7 +2,8 @@
 layout: page
 title: Perceptual Decision Making
 image: "joram_diag.png"
-parent: "Cellular"
+parenst
+    - Behavior
 authors:
     - Joram Keijser
 ---
