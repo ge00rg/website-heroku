@@ -1,6 +1,6 @@
 ---
 layout: research_filter
-hidden: true
+hide: true
 title: Inhibition
 permalink: "/research/inhibition/"
 heading_numbers:
