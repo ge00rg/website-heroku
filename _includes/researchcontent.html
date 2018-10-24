@@ -1,0 +1,59 @@
+<style>
+    .b2t_link{
+        float: right;
+        font-size: 15px;
+        color: #729ABD;    
+    }
+.speakerfloat {
+  position: absolute;
+  top: 200px;
+  margin-left: 20px;
+  border-radius: 50%;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 50px;
+  -webkit-box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.75);
+  transition: transform .2s;
+}
+@media only screen and (max-width: 600px) {
+    .speakerfloat {
+        background-color: lightblue;
+    }
+}
+.speakerfloat:hover{
+    transform: scale(1.5);
+    z-index: 5;
+}
+    a.anchor {
+    display: block;
+    position: relative;
+    top: -60px;
+    visibility: hidden;
+}
+a.head {
+    text-decoration: none;
+    color: #383838;
+}
+a.head:hover{
+    text-decoration: none;
+    color: #383838;
+}
+.link-list{
+    list-style: none;
+    text-align: left;
+    margin-left: 50px;
+}
+@media screen and (max-width: 780px) {
+    .speakerfloat{display: none;}
+    .project-text{clear: both;}
+}
+</style>
+<div class="nav-venn">
+<div class="catwrap"><div class="cattext cat1text">{{page.headings[0]}}</div><img src="{{site.baseurl}}/assets/img/research/cat1.svg" class="venn ellipse cat1"></div>
+<div class="catwrap"><div class="cattext cat2text">{{page.headings[1]}}</div><img src="{{site.baseurl}}/assets/img/research/cat2.svg" class="venn ellipse cat2"></div>
+<div class="catwrap"><div class="cattext cat3text">{{page.headings[2]}}</div><img src="{{site.baseurl}}/assets/img/research/cat3.svg" class="venn ellipse cat3"></div>
+<div class="catwrap"><div class="cattext int1text">{{page.headings[0]}}/<br>{{page.headings[1]}}</div><img src="{{site.baseurl}}/assets/img/research/int1.svg" class="venn inter int1"></div>
+<div class="catwrap"><div class="cattext int2text">{{page.headings[1]}}/<br>{{page.headings[2]}}</div><img src="{{site.baseurl}}/assets/img/research/int2.svg" class="venn inter int2"></div>
+</div>
