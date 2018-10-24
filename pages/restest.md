@@ -1,7 +1,7 @@
 ---
 hidden: true
 permalink: "/Inhibition/"
-heading_humbers:
+heading_numbers:
   - 1
   - 2
 ---
