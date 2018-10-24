@@ -2,7 +2,9 @@
 layout: page
 title: Burst  Control  in  Cortical  Circuits 
 image: "diag_filip.jpg"
-parent: "Microcircuit"
+parents:
+    - Inhibition
+    - Plasticity
 authors:
     - Filip Vercruysse
 ---
