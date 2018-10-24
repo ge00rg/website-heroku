@@ -1,6 +1,6 @@
 ---
 layout: research_filter
-hidden: true
+hide: true
 title: Plasticity
 permalink: "/research/plasticity/"
 heading_numbers:
