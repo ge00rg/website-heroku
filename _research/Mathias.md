@@ -4,7 +4,6 @@ title: Sensory Representations and Reinforcement Learning
 image: "mathias_diag2.png"
 parents:
     - Behavior
-    - Plasticity
 authors:
     - Mathias Schmerling
 ---
