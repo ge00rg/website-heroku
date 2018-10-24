@@ -1,6 +1,6 @@
 ---
 layout: research_filter
-hidden: true
+hide: true
 title: "Inhibition/Plasticity"
 permalink: "/research/inhibition_plasticity/"
 heading_numbers:
