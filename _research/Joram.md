@@ -3,7 +3,7 @@ layout: page
 title: Perceptual Decision Making
 image: "joram_diag.png"
 parenst
-    - Behavior
+    - Plasticity
 authors:
     - Joram Keijser
 ---
