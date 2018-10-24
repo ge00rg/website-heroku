@@ -3,7 +3,7 @@ layout: page
 title: Hierarchical network model of decision making with a multiplexed neural code in the sensory circuit
 image: "paola_diag.png"
 parents:
-    - Inhibition
+    - Behavior
 authors:
     - Paola Suarez
 ---
