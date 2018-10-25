@@ -18,9 +18,6 @@
    sodipodi:docname="ellipse.svg">
   <defs
      id="defs118" />
-   <filter id="f1" x="0" y="0">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
-    </filter>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -66,7 +63,6 @@
        cx="92.982155"
        cy="45.267857"
        rx="37.299999"
-       ry="22.299999" 
-             filter="url(#f1)"/>
+       ry="22.299999" />
   </g>
 </svg>
