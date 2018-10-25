@@ -1,6 +1,6 @@
 {% assign research=site.pages|where: "title", "Research" %}
 {% assign research_headings=research[0].headings %}
-<div class="nav-venn" style="{{site.baseurl}}/assets/img/research/cat1.svg">
+<div class="nav-venn" style="background-image: {{site.baseurl}}/assets/img/research/cat1.svg">
 <a class="resnavlink" href="{{site.baseurl}}/research/inhibition"><div class="catwrap"><div class="cattext cat1text">{{research_headings[0]}}</div><img src="{{site.baseurl}}/assets/img/research/cat1.svg" class="venn ellipse cat1"></div></a>
 <a class="resnavlink" href="{{site.baseurl}}/research/plasticity"><div class="catwrap"><div class="cattext cat2text">{{research_headings[1]}}</div><img src="{{site.baseurl}}/assets/img/research/cat2.svg" class="venn ellipse cat2"></div></a>
 <a class="resnavlink" href="{{site.baseurl}}/research/behavior"><div class="catwrap"><div class="cattext cat3text">{{research_headings[2]}}</div><img src="{{site.baseurl}}/assets/img/research/cat3.svg" class="venn ellipse cat3"></div></a>
