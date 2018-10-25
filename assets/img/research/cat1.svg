@@ -19,7 +19,7 @@
   <defs
      id="defs118" />
    <filter id="f1" x="0" y="0">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
     </filter>
   <sodipodi:namedview
      id="base"
