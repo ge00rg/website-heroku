@@ -7,7 +7,7 @@ permalink: /denis/
 room: MAR 5.014
 email: denis.alevi@bccn-berlin.de
 ---
-Denis Alevi studied Physics at Heidelberg University, where he worked on
+Denis studied Physics at Heidelberg University, where he worked on
 Neuromorphic Hardware for his bachelor's thesis. Currently he is pursuing a
 master's degree in Computational Neuroscience at the Bernstein Center in Berlin
 and joined the lab in 2017. For his master's thesis he is trying to
