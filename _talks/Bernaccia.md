@@ -1,0 +1,10 @@
+---
+layout: post_event
+title: "The non-sequential state of cortical circuits" 
+date: May 22, 2018
+speaker: Alberto Bernacchia
+location: Room 4.063, Marchstraße 23, 10587 Berlin
+affiliation: University of Oxford
+---
+
+A fundamental task of the brain is learning causal effects between sensory stimuli, by detecting their systematic temporal order. It has been shown that sequential activation of neurons reflects the learned temporal order of experienced stimuli. However, it is not clear how neurons respond to stimuli that have no systematic temporal order, in which forward and backward input sequences balance, and the input is effectively non-sequential. We hypothesize that, after waiting a sufficiently long time, the brain should learn the input statistics and display non-sequential neural activity. Using multi-electrode neural recordings in the primary visual cortex of awake ferrets, here we show that cortical responses actively adapt to produce non-sequential outputs. When subjects are shown a natural movie, to which they are adapted, neural activity is nearly non-sequential; When they are shown unfamiliar artificial noise, neural activity is sequential at first, but then it converges to a nearly non-sequential state within a few minutes. Furthermore, this difference between responses to natural and artificial stimuli was not present at eye opening but developed over several days. In order to understand the neural mechanisms underlying this adaptation, we studied a computational model of neural circuits dynamics undergoing spike timing-dependent plasticity. We proved that the most celebrated principles of synaptic organization, those of Hebb and Dale, are necessary and sufficient for the maintenance of non-sequential activity. We show that when these principles are violated, even non-sequential inputs can produce sequential outputs. These results reveal a new functional role of ubiquitous properties of neural circuits in ensuring the preservation of temporal sequentiality of cortical responses and thereby providing a dynamical substrate for the reliable learning of temporal information. 
