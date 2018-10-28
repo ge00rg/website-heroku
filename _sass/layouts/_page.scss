@@ -19,6 +19,13 @@ h2.title {
 .publications td{cursor: pointer;}
 .publications .extender{display:inline; float: right;}
 
+.talks {overflow-x: hidden; table-layout: fixed; width: 100%;}
+.talks tr{  border-bottom:1pt solid black; width: 100%;}
+.talks td{border: none;}
+.talkss th{border: none;}
+.talks td{cursor: pointer;}
+.talks .extender{display:inline; float: right;}
+
 #talks table{overflow-x: hidden; border-collapse:collapse;}
 #talks tr{  border-bottom:1pt solid black;}
 #talks .spacer{height: 10px; outline: none;}
