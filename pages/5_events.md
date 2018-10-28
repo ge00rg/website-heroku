@@ -37,7 +37,7 @@ banner-img: "events_cut_scale.JPG"
 {% for i in years %}
 {% if future_years contains i %}
 <h3>{{i}}</h3>
-<table id="talks" style="overflow: hidden;">
+<table id="talks" class="talks" style="overflow: hidden;">
 <tbody>
 {% for talk in talks %}
 
@@ -68,7 +68,7 @@ banner-img: "events_cut_scale.JPG"
 {% for i in years %}
 {% if past_years contains i %}
 <h3>{{i}}</h3>
-<table id="talks" style="overflow: hidden;">
+<table id="talks" class="talks" style="overflow: hidden;">
 <tbody>
 {% for talk in talks %}
 
