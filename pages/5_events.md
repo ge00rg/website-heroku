@@ -53,7 +53,7 @@ banner-img: "events_cut_scale.JPG"
     {%endif%}
 
 	<tr onclick="location.href='{{ talk.url | prepend: site.baseurl }}'">
-            <td><b>{{talk.speaker}}</b> <span id="affil">{%if talk.affiliation %}[{{talk.affiliation}}]{% endif %}</span><span id="date">{{talk.date| date: "%B %-d, %Y"}}</span><br><i>{{talk.title}}</i><br><div id="abstractbox">{{talk.content|strip_html|truncate:170}}</div></td><td></td>
+            <td><b>{{talk.speaker}}</b> <span id="affil">{%if talk.affiliation %}[{{talk.affiliation}}]{% endif %}</span><span class="event_date">{{talk.date| date: "%B %-d, %Y"}}</span><br><i>{{talk.title}}</i><br><div id="abstractbox">{{talk.content|strip_html|truncate:170}}</div></td><td></td>
         </tr>
 {% endif %}
 {% endif %}
