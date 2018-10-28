@@ -26,14 +26,14 @@ h2.title {
 .talks td{cursor: pointer;}
 .talks .extender{display:inline; float: right;}
 
-#talks table{overflow-x: hidden; border-collapse:collapse;}
-#talks tr{  border-bottom:1pt solid black;}
-#talks .spacer{height: 10px; outline: none;}
-#talks td{border: none;}
-#talks th{border: none;}
-#talks td{cursor: pointer;}
-#talks figcaption{text-align: center;}
-#talks #date{display:inline; color: lighten($text-color, 30%); text-transform: uppercase; font-size: 15px; float: right;}
+.talks table{overflow-x: hidden; border-collapse:collapse;}
+.talks tr{  border-bottom:1pt solid black;}
+.talks .spacer{height: 10px; outline: none;}
+.talks td{border: none;}
+.talks th{border: none;}
+.talks td{cursor: pointer;}
+.talks figcaption{text-align: center;}
+.talks .event_date{display:inline; color: lighten($text-color, 30%); text-transform: uppercase; font-size: 15px; float: right;}
 
 //Shared css in _post.scss
 
