@@ -72,8 +72,8 @@ display: -webkit-box;
     #contact {width:45%}
     #call {width:45%; float:right; padding-top: 15px;}
 
-    #talks #date{float: left;}
-    #talks #affil{display: block;}
+    .talks .date{float: left;}
+    .talks .affil{display: block; display: none;}
 
     #talkfig {clear: left;}
 
