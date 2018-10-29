@@ -31,10 +31,11 @@ banner-img: "events_cut_scale.JPG"
 {% endfor %}
 
 {% assign years=years|uniq %}
+{% assign years_rev=years|reverse %}
 
 <!-- Future -->
 <h2>Upcoming Events</h2>
-{% for i in years %}
+{% for i in years_rev %}
 {% if future_years contains i %}
 <h3>{{i}}</h3>
 <table class="talks" style="overflow: hidden;">
