@@ -5,7 +5,8 @@ permalink: /events/
 banner-img: "events_cut_scale.JPG"
 ---
 
-{% assign talks=site.talks | sort: 'date' | reverse %}
+{% assign talks_rev=site.talks |sort: 'date' %}
+{% assign talks=talks | reverse %}
 
 {% assign years=""| split: "," %}
 {% assign dates=""| split: "," %}
@@ -40,7 +41,7 @@ banner-img: "events_cut_scale.JPG"
 <h3>{{i}}</h3>
 <table class="talks" style="overflow: hidden;">
 <tbody>
-{% for talk in talks %}
+{% for talk in talks_rev %}
 
 {% assign year=talk.date|date: "%Y" %}
 {% capture date %}{{talk.date | date: '%s'}}{% endcapture %}
