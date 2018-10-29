@@ -12,7 +12,7 @@ text: We investigate the neuronal basis of cognitive abilities such as perceptio
 theme_settings:
   # Meta
   title: SPREKELER lab  # blog's title
-  avatar: assets/img/MKPlogo.png
+  avatar: assets/img/logo.png
   favicon: assets/img/logo_bin_stripes.png
   gravatar: # Email MD5 hash
 
