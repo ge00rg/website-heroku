@@ -6,7 +6,7 @@ banner-img: "events_cut_scale.JPG"
 ---
 
 {% assign talks_rev=site.talks |sort: 'date' %}
-{% assign talks=talks | reverse %}
+{% assign talks=talks_rev | reverse %}
 
 {% assign years=""| split: "," %}
 {% assign dates=""| split: "," %}
