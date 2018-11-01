@@ -12,6 +12,14 @@ h2.title {
     text-shadow: 1px 1px 2px $text-shadow;
 }
 
+.paperlink{
+    color: $text-color;
+}
+.paperlink:hover{
+    color: $text-color;
+    text-decoration: none;
+}
+
 .publications {overflow-x: hidden; table-layout: fixed; width: 100%;}
 .publications tr{  border-bottom:1pt solid black; width: 100%;}
 .publications td{border: none;}
