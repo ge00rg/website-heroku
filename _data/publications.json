@@ -1,5 +1,21 @@
 [
 {
+    "title": "Dummy Paper",
+    "author": "R. Naud, H. Sprekeler",
+    "year": "2018",
+    "journal": "PNAS, 115(27):E6329-E6338",
+    "link" : "http://www.pnas.org/content/pnas/early/2018/06/21/1720995115.full.pdf",
+    "preprint": "true"
+},
+{
+    "title": "Dummy Paper 2",
+    "author": "N. Chenkov, H. Sprekeler, R. Kempter",
+    "year": "2017",
+    "journal": "PLoS Computational Biology 13(1): e1005359",
+    "link" : "http://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005359&type=printable",
+    "preprint": "true"
+},
+{
     "title": "Sparse bursts optimize information transmission in a multiplexed neural code",
     "author": "R. Naud, H. Sprekeler",
     "year": "2018",
