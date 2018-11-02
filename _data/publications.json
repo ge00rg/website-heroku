@@ -1,17 +1,18 @@
 [
 {
-    "title": "Dummy Paper",
-    "author": "R. Naud, H. Sprekeler",
+    "title": "Amplifying the redistribution of somato-dendritic inhibition by the interplay of three interneuron types",
+    "author": "Loreen Hertaeg, Henning Sprekeler",
     "year": "2018",
-    "journal": "PNAS, 115(27):E6329-E6338",
-    "link" : "http://www.pnas.org/content/pnas/early/2018/06/21/1720995115.full.pdf",
+    "journal": "bioRxiv",
+    "link" : "https://www.biorxiv.org/content/early/2018/09/06/410340.full.pdf",
     "preprint": "true"
 },
 {
-    "title": "Dummy Paper 2",
-    "author": "N. Chenkov, H. Sprekeler, R. Kempter",
-    "year": "2017",
-    "journal": "PLoS Computational Biology 13(1): e1005359",
+    "title": "A local measure of symmetry and orientation for individual spikes of grid cells",
+    "author": "Simon Nikolaus Weber, Henning Sprekeler",
+    "year": "2018",
+    "link": "https://www.biorxiv.org/content/early/2018/09/24/425637.full.pdf",
+    "journal": "bioRxiv",
     "preprint": "true"
 },
 {
