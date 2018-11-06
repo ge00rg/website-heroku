@@ -33,7 +33,7 @@ banner-img: "publications_cut_scale.JPG"
 <table class="publications">
 {% for paper in site.data.publications %}
 {% if paper.preprint=="true" %}
-	<tr><td width="100%"> <a class="paperlink" href="{{paper.link}}"><b>{{paper.title}}</b> {% if paper.link %}<i class="fa fa-file-pdf-o"></i>{% endif %}<br>{{paper.author}} <br> {{paper.journal}}aaa</a></td><td></td></tr>
+	<tr><td width="100%"> <a class="paperlink" href="{{paper.link}}"><b>{{paper.title}}</b> {% if paper.link %}<i class="fa fa-file-pdf-o"></i>{% endif %}<br>{{paper.author}} <br> {{paper.journal}}, {{paper.year}}</a></td><td></td></tr>
 {% endif %}
 {% endfor %}
 </table>
