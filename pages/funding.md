@@ -4,7 +4,6 @@ hide: true
 title: Funding
 permalink: "/funding/"
 ---
-<h2 style="text-align: center;">Funded by</h2>
 <div class="row" style="display: flex; align: center;">
     <div class="column" style="width: 33%;">
         <a href="https://www.bccn-berlin.de/">
