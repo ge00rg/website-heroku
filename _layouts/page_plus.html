@@ -60,7 +60,9 @@ $( ".excerpt" ).each(function( ) {
 });
 
 $( ".excerpt" ).each(function( ) {
-    $(this).addClass("truncate");
+    if($(this).height()/parseFloat($("body").css("font-size")) < 0.1){
+        $(this).removeClass("truncate");
+    }
 });
   
 $(".txtcol").click(function(){
