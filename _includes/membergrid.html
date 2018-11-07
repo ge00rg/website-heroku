@@ -1,6 +1,6 @@
 <style>
 /* Three columns side by side */
-.column {
+.column-x {
     float: left;
     width: 33.3%;
     height: 360px;
@@ -76,7 +76,7 @@ figcaption {
     {% for position in page.position-order %}
         {% for member in site.members %}
             {% if member.position == position %}
-                <div class="column">
+                <div class="column-x">
                     <figure>
                         <a href="{{ site.baseurl }}{{ member.url }}" data-keyboard="true">
                             <img class="memberpic" src="{{ site.baseurl }}/assets/img/members/{{ member.img }}">
@@ -91,7 +91,7 @@ figcaption {
 
   {% for member in site.members %}
         {% unless page.position-order contains member.position %}
-            <div class="column">
+            <div class="column-x">
                 <figure>
                     <a href="{{ site.baseurl }}{{ member.url }}" data-keyboard="true">
                         <img class="memberpic" src="{{ site.baseurl }}/assets/img/members/{{ member.img }}">
