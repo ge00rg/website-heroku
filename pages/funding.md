@@ -1,7 +1,7 @@
 ---
 layout: page
 hide: true
-title: Funding
+title: Funded by
 permalink: "/funding/"
 ---
 <div class="row" style="display: flex; align: center;">
