@@ -102,9 +102,11 @@ a.head:hover{
                                     {% assign img=member.img %}
                                 {% endif %}
                             {% endfor %}
+                            <div style="position:bottom:0px;">
                             <a href="{{site.baseurl}}/{{url}}">
                                 <img class="speakerfloat" src="{{site.baseurl}}/assets/img/members/{{img}}" style="left: {{leftpix}}px;">
                             </a>
+                            </div>
                             {% assign leftpix=leftpix|plus: 35 %}
                             {% endfor %}
                         </div>
