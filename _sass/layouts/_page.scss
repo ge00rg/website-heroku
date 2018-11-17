@@ -48,7 +48,7 @@ h2.title {
 #address {width:30%; float:left; padding-bottom: 15px;}
 #map {position: relative; hieght: 0; overflow: hidden; width:60%; float:right; padding-bottom: 50%; margin: 10px 0px 0px 0px;}
 #contact {width:30%; float:left; padding-top: 15px; padding-bottom: 30px;}
-#call {width:30%; float:left;}	
+#call {width:30%; float:left; clear: both;}	
 #desc {padding-bottom: 15px;}
 
 #ifr {width: 100% !important; height: 100% !important; position: absolute; top: 0; left: 0;}
@@ -78,7 +78,7 @@ display: -webkit-box;
     #address {clear: both; width: 100%; margin: 30px 0px 0px 0px;}
     #map {clear: both; width: 100%; padding-top: 15px; margin: 30px 0px 0px 0px;}
     #contact {width:45%}
-    #call {width:45%; float:right; padding-top: 15px;}
+    #call {width:45%; float:right; padding-top: 15px; clear: none;}
 
     .talks .date{float: left;}
     .talks .affil{display: block; display: none;}
