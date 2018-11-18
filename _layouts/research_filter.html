@@ -74,7 +74,7 @@ a.head:hover{
   {% if project.parents==used_headings %}
      <div style="clear: both; overflow-wrap: normal; padding-bottom: 30px;">
                         <h3 style="margin-bottom: 0;">{{project.title}}<a href="#top" class="b2t_link">Back to top</a></h3>
-                        <h5 style="margin-bottom: 50px;">
+                        <h5 style="margin-bottom: 0px;">
                             {% assign i=0 %}
                             {% assign authors=project.authors|reverse %}
                             {% for author in authors %}
@@ -103,9 +103,11 @@ a.head:hover{
                                     {% assign img=member.img %}
                                 {% endif %}
                             {% endfor %}
+                        <div style="position:absolute; min-width:100px;">
                             <a href="{{site.baseurl}}/{{url}}">
                                 <img class="speakerfloat" src="{{site.baseurl}}/assets/img/members/{{img}}" style="left: {{leftpix}}px;">
                             </a>
+                        </div>
                             {% assign leftpix=leftpix|plus: 35 %}
                             {% endfor %}
                         </div>
@@ -117,7 +119,7 @@ a.head:hover{
   {% elsif project.parents==used_headings_rev %}
      <div style="clear: both; overflow-wrap: normal; padding-bottom: 30px;">
                         <h3 style="margin-bottom: 0;">{{project.title}}<a href="#top" class="b2t_link">Back to top</a></h3>
-                        <h5 style="margin-bottom: 50px;">
+                        <h5 style="margin-bottom: 0px;">
                             {% assign i=0 %}
                             {% assign authors=project.authors|reverse %}
                             {% for author in authors %}
@@ -146,9 +148,11 @@ a.head:hover{
                                     {% assign img=member.img %}
                                 {% endif %}
                             {% endfor %}
+                        <div style="position:absolute; min-width:100px;">
                             <a href="{{site.baseurl}}/{{url}}">
                                 <img class="speakerfloat" src="{{site.baseurl}}/assets/img/members/{{img}}" style="left: {{leftpix}}px;">
                             </a>
+                        </div>
                             {% assign leftpix=leftpix|plus: 35 %}
                             {% endfor %}
                         </div>
