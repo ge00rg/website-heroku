@@ -66,9 +66,8 @@ a.head:hover{
 {% endfor %}
 
 {% assign n_headings = used_headings | size %}
-n_headings
+{{n_headings}}
 
-{% if n_headings > 1 %}
 {% assign used_headings_rev=used_headings|reverse %}
 <div class="content">
 {% for project in site.research %}
@@ -157,9 +156,6 @@ n_headings
                             {{project.content}}
                         </div>
                     </div>
-{% else %}
-    a
-{% endif %}
     
   {% endif %}
 {% endfor %}
