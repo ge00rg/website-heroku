@@ -84,7 +84,7 @@ a.head:hover{
                                     {% endif %}
                                 {% endfor %}
                                 {% unless i==0 %}<span style="color: DarkGray;"> ,</span>{% endunless %}
-                                <a href="{{site.baseurl}}{{url}}" class="authorlink" style="color: DarkGray;">{{author}}</a>
+                                <a href="{{site.baseurl}}{{url}}" class="author authorlink" id="{{author}}_lnk" style="color: DarkGray;">{{author}}</a>
                                 {% assign i=i | plus: 1 %}
                             {% endfor %}
                         </h5>
@@ -105,7 +105,7 @@ a.head:hover{
                             {% endfor %}
                         <div style="position:absolute; min-width:100px;">
                             <a href="{{site.baseurl}}/{{url}}">
-                                <img class="speakerfloat" src="{{site.baseurl}}/assets/img/members/{{img}}" style="left: {{leftpix}}px;">
+                                <img class="author speakerfloat" id="{{author}}_flt" src="{{site.baseurl}}/assets/img/members/{{img}}" style="left: {{leftpix}}px;">
                             </a>
                         </div>
                             {% assign leftpix=leftpix|plus: 35 %}
@@ -129,7 +129,7 @@ a.head:hover{
                                     {% endif %}
                                 {% endfor %}
                                 {% unless i==0 %}<span style="color: DarkGray;"> ,</span>{% endunless %}
-                                <a href="{{site.baseurl}}{{url}}" class="authorlink" style="color: DarkGray;">{{author}}</a>
+                                <a href="{{site.baseurl}}{{url}}" class="author authorlink" id="{{author}}_lnk" style="color: DarkGray;">{{author}}</a>
                                 {% assign i=i | plus: 1 %}
                             {% endfor %}
                         </h5>
@@ -150,7 +150,7 @@ a.head:hover{
                             {% endfor %}
                         <div style="position:absolute; min-width:100px;">
                             <a href="{{site.baseurl}}/{{url}}">
-                                <img class="speakerfloat" src="{{site.baseurl}}/assets/img/members/{{img}}" style="left: {{leftpix}}px;">
+                                <img class="author speakerfloat" id="{{author}}_flt" src="{{site.baseurl}}/assets/img/members/{{img}}" style="left: {{leftpix}}px;">
                             </a>
                         </div>
                             {% assign leftpix=leftpix|plus: 35 %}
@@ -178,7 +178,7 @@ a.head:hover{
                                     {% endif %}
                                 {% endfor %}
                                 {% unless i==0 %}<span style="color: DarkGray;"> ,</span>{% endunless %}
-                                <a href="{{site.baseurl}}{{url}}" class="authorlink" style="color: DarkGray;">{{author}}</a>
+                                <a href="{{site.baseurl}}{{url}}" class="author authorlink" id="{{author}}_lnk" style="color: DarkGray;">{{author}}</a>
                                 {% assign i=i | plus: 1 %}
                             {% endfor %}
                         </h5>
@@ -198,7 +198,7 @@ a.head:hover{
                                 {% endif %}
                             {% endfor %}
                             <a href="{{site.baseurl}}/{{url}}">
-                                <img class="speakerfloat" src="{{site.baseurl}}/assets/img/members/{{img}}" style="left: {{leftpix}}px;">
+                                <img class="author speakerfloat" id="{{author}}_flt" src="{{site.baseurl}}/assets/img/members/{{img}}" style="left: {{leftpix}}px;">
                             </a>
                             {% assign leftpix=leftpix|plus: 35 %}
                             {% endfor %}
@@ -211,3 +211,35 @@ a.head:hover{
 {% endfor %}
 {% endif %}
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+var dct = {"lnk": "flt", "flt": "lnk"};
+$('.author').each(function() {
+    var ele = $(this).attr('id').slice(0,-3);
+    var type = $(this).attr('id').slice(-3)
+    var trigger = ele.concat(dct[type]);
+   $(this).hover( function(){
+       if (type == 'lnk') {
+           $(this).css('text-decoration', 'underline');
+           $("[id='"+trigger+"']").css('transform', 'scale(1.5)');
+       }
+       else {
+            $(this).css('transform', 'scale(1.5)');
+           $("[id='"+trigger+"']").css('text-decoration', 'underline');
+       }
+   },
+   function(){
+      if (type == 'lnk') {
+           $("[id='"+trigger+"']").css('transform', 'none');
+            $(this).css('text-decoration', 'none');
+
+       }
+       else {
+           $("[id='"+trigger+"']").css('text-decoration', 'none');
+            $(this).css('transform', 'none');
+
+       }
+   });
+});
+</script>
