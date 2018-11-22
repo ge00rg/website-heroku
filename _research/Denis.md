@@ -7,6 +7,7 @@ parents:
     - Behavior
 authors:
     - Denis Alevi
+    - Henning Sprekeler
 ---
 In this project we try to understand how episodic to semantic memory
 transformations can arise in a previously proposed circuit mechanism for systems memory

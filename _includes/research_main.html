@@ -130,7 +130,7 @@ $('.author').each(function() {
    $(this).hover( function(){
        if (type == 'lnk') {
            $(this).css('text-decoration', 'underline');
-           $("[id='"+trigger+"']").css('transform', 'scale(1.5)');
+           $("[id='"+trigger+"']").css({'transform': 'scale(1.5)', 'z-index': '5'});
        }
        else {
             $(this).css('transform', 'scale(1.5)');
@@ -145,7 +145,7 @@ $('.author').each(function() {
        }
        else {
            $("[id='"+trigger+"']").css('text-decoration', 'none');
-            $(this).css('transform', 'none');
+            $(this).css({'transform': 'none', 'z-index': 'auto'});
 
        }
    });
