@@ -90,7 +90,7 @@ a.head:hover{
                         </h5>
                     <div style="position: relative;">
                         {% if project.image %}
-                            <img src="{{site.baseurl}}/assets/img/research/{{project.image}}" style="float: left; padding: 20px 20px 10px 0px; width: 350px; min-height: 250xpx;">
+                            <img src="{{site.baseurl}}/assets/img/research/{{project.image}}" style="float: left; padding: 50px 20px 10px 0px; width: 350px; min-height: 250xpx;">
                         {% else %}
                             <img src="{{site.baseurl}}/{{site.emergency-img}}" style="float: left; padding: 20px 20px 10px 0px; width: 350px;">
                         {% endif %}
@@ -135,7 +135,7 @@ a.head:hover{
                         </h5>
                     <div style="position: relative;">
                         {% if project.image %}
-                            <img src="{{site.baseurl}}/assets/img/research/{{project.image}}" style="float: left; padding: 20px 20px 10px 0px; height: 250px; min-height: 250xpx;">
+                            <img src="{{site.baseurl}}/assets/img/research/{{project.image}}" style="float: left; padding: 50px 20px 10px 0px; height: 250px; min-height: 250xpx;">
                         {% else %}
                             <img src="{{site.baseurl}}/{{site.emergency-img}}" style="float: left; padding: 20px 20px 10px 0px; height: 250px;">
                         {% endif %}
@@ -168,7 +168,7 @@ a.head:hover{
   {% if project.parents contains used_headings[0] %}
      <div style="clear: both; overflow-wrap: normal; padding-bottom: 30px;">
                         <h3 style="margin-bottom: 0;">{{project.title}}<a href="#top" class="b2t_link">Back to top</a></h3>
-                        <h5 style="margin-bottom: 50px;">
+                        <h5 style="margin-bottom: 0px;">
                             {% assign i=0 %}
                             {% assign authors=project.authors|reverse %}
                             {% for author in authors %}
@@ -184,7 +184,7 @@ a.head:hover{
                         </h5>
                     <div style="position: relative;">
                         {% if project.image %}
-                            <img src="{{site.baseurl}}/assets/img/research/{{project.image}}" style="float: left; padding: 20px 20px 10px 0px; width: 350px; min-height: 250xpx;">
+                            <img src="{{site.baseurl}}/assets/img/research/{{project.image}}" style="float: left; padding: 50px 20px 10px 0px; width: 350px; min-height: 250xpx;">
                         {% else %}
                             <img src="{{site.baseurl}}/{{site.emergency-img}}" style="float: left; padding: 20px 20px 10px 0px; width: 350px;">
                         {% endif %}
