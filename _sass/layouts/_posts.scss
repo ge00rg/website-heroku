@@ -111,17 +111,17 @@ header {
   /* fix problem when last visible word doesn't adjoin right side  */
   text-align: justify;  
   /* place for '...' */
-  margin-right: -1em;
+  margin-right: 0em;
   padding-right: 1em;
 }
 /* create the ... */
 .truncate:before {
   /* points in the end */
-  content: '..';
+  content: '...';
   /* absolute position */
   position: absolute;
   /* set position to right bottom corner of block */
-  right: 7px;
+  right: 0;
   bottom: 0;
 }
 /* hide ... if we have text, which is less than or equal to max lines */
