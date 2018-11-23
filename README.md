@@ -29,7 +29,7 @@
 <a name="wiki"></a>
 ## 2. How to Use This Wiki
 
-You don't have to read all of this if you want to make a change or contribution to the site. Just read [1. General](#general) and then skip over to the sections that relates to what you want to do. However, please do not omit reading the general information, as it will prevent easily avoidable errors.
+You don't have to read all of this if you want to make a change or contribution to the site. Just read [1. General](#general) and then skip over to the sections that relates to what you want to do. Some of them reference do other sections at which you then can take a look if needed. However, please **do not omit reading the general information**, as it will prevent easily avoidable errors.
 
 <a name="general"></a>
 ## 1. General
@@ -76,6 +76,8 @@ The part below is markdown, which is basically just text, but where you can also
 
 **Important formatting note**: As mentioned above, certain characters within a YAML header are reserved and will not be displayed correctly when used, or even break the file structure and cause deployment of the site to fail. In such cases, check if the error goes away by removing special characters. If it does, there are various ways to prevent this kind of behavior, the simplest one being to enclose the value in question in ""-quotes. Some other ways are outlined [here](https://interviewbubble.com/solved-how-to-escape-indicator-characters-or-in-yaml-escaping-colons-in-yaml/), particularily if you want to use line breaks for some reason. However, tread carefully and always test, because Jekyll does not fully support all of these.
 
+If you add new images, please use compression (I used [this](https://tinypng.com/) site that works with jpg and png images) in order to save some loading time.
+
 <a name="banner"></a>
 ## 2. Banner Images
 
@@ -105,18 +107,20 @@ All research projects are located in the folder `_research/`. They are then disp
 ---
 layout: page
 title: Burst  Control  in  Cortical  Circuits 
-image: "assets/img/diag_filip.jpg"
-parent: "Microcircuit"
+image: "diag_filip.jpg"
+parents:
+    - Inhibition
+    - Plasticity
 authors:
-    - Henning Sprekeler
     - Filip Vercruysse
 ---
-The  existence  of  specialized  mechanisms  for  burst  generation  in  pyramidal  cells  (PCs)  suggests  that  bursts    are  likely  to  be  an  important  temporal  feature  of  neural  signals.  In L5  PCs  bursts  occur  at  a  low,  but    consistent  rate,  and  are  thought  to  arise  from  active  dendritic  processes.  Given  that  burst  activity  relies    on  dendritic  threshold  mechanisms,  it  appears  likely  that  low  burst  activity  require  homeostatic  control,  but  the  underlying  mechanisms  are  not  resolved.  In  this  research  project  we  model  a  biologically  inspired  circuit  diagram  of  a  self-organized  microcircuit  with  different  inhibitory  cell  types  and  plasticity  rules  to  control  the  burst  and  population  rate  of  PCs.  Our  work  shows  that  inhibitory  plasticity  rules  may  serve  as  building  blocks  to  self-organise  complex  network  architectures  and  allows  us  to  investigate  coding  properties  of    bursting  units  without  the  need  for  tuning  of  input  or  noise  levels.   
+The  existence  of  specialized  mechanisms  for  burst  generation  in  pyramidal  cells  (PCs)  suggests  that  bursts  are  likely  to  be  an  important  temporal  feature  of  neural  signals.  In L5  PCs  bursts  occur  at  a  low,  but  consistent  rate,  and  are  thought  to  arise  from  active  dendritic  processes.  Given  that  burst  activity  relies  on  dendritic  threshold  mechanisms,  it  appears  likely  that  low  burst  activity  require  homeostatic  control,  but  the  underlying  mechanisms  are  not  resolved.  In  this  research  project  we  model  a  biologically  inspired  circuit  diagram  of  a  self-organized  microcircuit  with  different  inhibitory  cell  types  and  plasticity  rules  to  control  the  burst  and  population  rate  of  PCs.  Our  work  shows  that  inhibitory  plasticity  rules  may  serve  as  building  blocks  to  self-organise  complex  network  architectures  and  allows  us  to  investigate  coding  properties  of  bursting  units  without  the  need  for  tuning  of  input  or  noise  levels. 
+  
 ```
 
 `layout` should always be set to 'page'. The `title` is obviously the title of the project. `image` holds the name of the image displayed with the project. All project images should be placed in the `assets/img/research` folder.
 
-parent should be set to one of the four categories listed in the file `pages/1_research.md` under headings; currently 'Synaptic', 'Cellular', 'Microcircuit', 'Behavior'. They serve to subdivde the project page into these four subcategories; failing to match one of these keywords means that the project will not be displayed.
+`parents` is a list of either one or two items from the categories listed in the file `pages/1_research.md` under headings: 'Inhibition', 'Plasticity' and 'Behavior'. Please note that a poject cannot have both 'Inhibition' and 'Behavior' as parents. They serve to subdivde the project page into these four subcategories; failing to match one of these keywords means that the project will not be displayed.
 
 `authors` is a list of authors that work on the project. These names should exactly correspond with the `title` entry of a file in the `_members` folder, or in other words, exactly match a name of a member of the group as used on the team page.
 
@@ -124,13 +128,9 @@ The markdown contains a description of the project.
 
 To create a new project, just create a new file with this structure in the `_research/` folder.
 
-### Navigation Categories
+### Navigation Categories (Research Headings)
 
-To change the research project categories (currently) 'Synaptic', 'Cellular', 'Microcircuit', 'Behavior', edit  the `headings` entry of `pages/1_research.md`. Do not forget the whitespace before the '-'! To change the images associted with these categories, edit the `images` list (it has the same order as the `headings` list) with the names of the desired images, which should be located in `assets/img/research`.
-
-### Navigation Images
-
-To change the images associted with these categories, edit the `images` list in `pages/1_research.md` (it has the same order as the `headings` list) with the names of the desired images, which should be located in `assets/img/research`.
+To change the research project categories 'Inhibition', 'Plasticity' and 'Behavior', edit  the `headings` entry of `pages/1_research.md`. Do not forget the whitespace before the '-'! Note that this is a far reaching change as you then have to also change the parents of all research projects to reflect the change you made here.
 
 <a name="team"></a>
 ## 5. Team
@@ -176,7 +176,11 @@ All publications haven an entry in `_data/publications.json`, which contains a l
 
 Edit and create new entries at your heart's delight (while preserving the correct syntax of course).
 
-The publications are later automatically sorted by year, but **within a year the order within the file is preserved**. 
+The publications are later automatically sorted by year, but **within a year the order within the file is preserved**.
+
+### Preprints
+
+A publication can be marked as a preprint by adding the line `"preprint": "true"` to its json entry. If this line is absent, it is simply assumed that the paper in question is not a preprint and the site will deploy correctly. Preprints are listed at the very top of the page under the heading (surprise!) "Preprints". Obviously, once the the paper gets published, the preprint entry has to be removed manually.
 
 <a name="news"></a>
 ## 7. News
