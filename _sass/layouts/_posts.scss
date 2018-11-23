@@ -117,11 +117,11 @@ header {
 /* create the ... */
 .truncate:before {
   /* points in the end */
-  content: '...';
+  content: '..';
   /* absolute position */
   position: absolute;
   /* set position to right bottom corner of block */
-  right: 0;
+  right: 7px;
   bottom: 0;
 }
 /* hide ... if we have text, which is less than or equal to max lines */
