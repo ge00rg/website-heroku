@@ -28,7 +28,7 @@ layout: default
 
 <div class="posts">
     {% for post in site.posts %}
-        <div class="post-teaser">
+        <div class="post-teaser" style="overflow-x: hidden;">
             {% if post.thumbnail %} 
                 <div class="post-img">
                  <img src="{{ site.baseurl }}/assets/img/thumbnails/{{ post.thumbnail }}">
@@ -61,7 +61,7 @@ $( ".excerpt" ).each(function( ) {
     if($(this).height()/parseFloat($("body").css("font-size")) < 1){
         $(this).css("display", 'none');
     }
-});
+}); 
   
 $(".txtcol").click(function(){
     if($(this).prev().hasClass("truncate")) {
