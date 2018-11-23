@@ -28,7 +28,7 @@ layout: default
 
 <div class="posts">
     {% for post in site.posts %}
-        <div class="post-teaser" style="overflow-x: hidden;">
+        <div class="post-teaser">
             {% if post.thumbnail %} 
                 <div class="post-img">
                  <img src="{{ site.baseurl }}/assets/img/thumbnails/{{ post.thumbnail }}">
@@ -41,7 +41,7 @@ layout: default
                         {{ post.date | date: "%B %-d, %Y" }}
                     </p>
                 </header>
-                <div class="excerpt">
+                <div class="excerpt" style="overflow-x: hidden;">
                   {{ post.content | strip_html | escape }}
                 </div>
                 <div class="txtcol"><a>Show More</a></div>
