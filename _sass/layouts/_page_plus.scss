@@ -38,6 +38,7 @@
 
 // Post listing
 .posts {
+    overflow-x: hidden;
     .post-teaser {
         @extend %padding-regular;
         width: 100%;
