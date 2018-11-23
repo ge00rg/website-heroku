@@ -56,7 +56,7 @@ on graphics processing units and has developed the open source software
 Brian2CUDA.
 ```
 
-The part between the '---' characters is the YAML header. It allows to define variables that are later used to generate a page. These variables, the characters after the colon are going to be used by Jekyll to automatically create Denis' member page. It is important to use the correct syntax here - `variable: value` for simple variables. If the vaule contains certian reserved characters like for example "-", the whole value should be enclosed in quotation marks. Another syntactic feature of YAML that we use are lists. They are structured as follows:
+The part between the '---' characters is the YAML header. It allows to define variables that are later used to generate a page. The variable names come before the colon and the value that they hold come after. These are going to be used by Jekyll to automatically create Denis' member page in this example. It is important to use the correct syntax here - `variable: value` for simple variables. If the vaule contains certian reserved characters like for example "-", the whole value should be enclosed in quotation marks. Another syntactic feature of YAML that we use are lists. They are structured as follows:
 ```
 list:
     - item1
@@ -66,6 +66,8 @@ list:
 It is crucial that there is always a whitespace after the "-", otherwise this will not be recognized as a list.
 
 The part below is markdown, which is basically just text, but where you can also insert links and images and tables and so on. We are mostly using it for text and for the fact that when html is generated from it, formatting is preserved.
+
+**Important formatting note**: As mentioned above, certain characters within a YAML header are reserved and will not be displayed correctly when used, or even break the file structure and cause deployment of the site to fail. In such cases, check if the error goes away by removing special characters. If it does, there are various ways to prevent this kind of behavior, the simplest one being to enclose the value in question in ""-quotes. Some other ways are outlined [here](https://interviewbubble.com/solved-how-to-escape-indicator-characters-or-in-yaml-escaping-colons-in-yaml/), particularily if you want to use line breaks for some reason. However, tread carefully and always test, because Jekyll does not fully support all of these.
 
 <a name="banner"></a>
 ## 2. Banner Images
