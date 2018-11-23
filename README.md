@@ -2,6 +2,8 @@
 
 ## Table of Contents
 
+0. [How to Use This Wiki](#wiki)
+
 1. [General](#general)
 
 2. [Banner Images](#banner)
@@ -23,6 +25,11 @@
 10. [Impressum](#impressum)
 
 11. [Notes for the Webmaster](#notes)
+
+<a name="wiki"></a>
+## 2. How to Use This Wiki
+
+You don't have to read all of this if you want to make a change or contribution to the site. Just read [1. General](#general) and then skip over to the sections that relates to what you want to do. However, please do not omit reading the general information, as it will prevent easily avoidable errors.
 
 <a name="general"></a>
 ## 1. General
