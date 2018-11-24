@@ -157,7 +157,7 @@ The layout is always set to "member_post", the `title` is the name of the person
 The markdown part afterwards is the short bio of the person in question and is later displayed on their page.
 
 ### Alumni
-One special position is Alumni (yes, I know that the proper singular is Alumnus/Alumna). If `position: Alumnus` is specified, the member does not appear with all the others as described above, but instead at the very bottom in a special Alumni-grid.
+One special position is Alumni (yes, I know that the proper singular is Alumnus/Alumna). If `position: Alumnus` is specified, the member does not appear with all the others as described above, but instead at the very bottom in a special Alumni-grid. When edition the position order (see next section) it is crucial that "Alumni" is **not** part of that list!
 
 ### Position Order
 To change the order of positions within the group, edit `position-order` in `pages/2_team.md`. It is also possible to add or remove position entries. Everything not on this list is displayed last in alphabetical order.
