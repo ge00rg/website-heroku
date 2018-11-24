@@ -39,27 +39,8 @@ figcaption {
     -webkit-filter: grayscale(0%);
 }
 /* Display the columns below each other instead of side by side on small screens */
+
 @media screen and (max-width: 650px) {
-    .column {
-        width: 80%;
-        display: block;
-    }
-    .memberpic{
-        -webkit-filter: grayscale(0%) contrast(100%); /* Safari 6.0 - 9.0 */
-        filter: grayscale(0%) contrast(100%);
-        border-radius: 40px /10px;
-        display: block;
-    }
-    .memberpic:hover {
-        -webkit-filter: grayscale(0%) contrast(100%); /* Safari 6.0 - 9.0 */
-        filter: grayscale(0%) contrast(100%);
-    }
-    .column:hover {
-        transform: scale(1.0);
-    }
-    
-}
-@media screen and (max-width: 450px) {
     .column {
         width: 100%;
     }
