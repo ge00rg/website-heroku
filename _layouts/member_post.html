@@ -36,9 +36,11 @@ layout: default
 {% endif %}
 
 <!-- Post navigation -->
-{% if site.theme_settings.post_navigation %}
-    {% include post_nav.html %}
-{% endif %}
+{% unless page.position=="Alumni" %}
+    {% if site.theme_settings.post_navigation %}
+        {% include post_nav.html %}
+    {% endif %}
+{% endunless %}
 
 <style>
 .member-container{

@@ -1,7 +1,7 @@
 ---
 layout: member_post
 title: Simon Weber
-position: PhD Student
+position: Alumni
 img: "Simon_crop.JPG"
 permalink: /simon/
 room: MAR 5.016

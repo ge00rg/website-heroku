@@ -39,6 +39,28 @@ figcaption {
     -webkit-filter: grayscale(0%);
 }
 /* Display the columns below each other instead of side by side on small screens */
+    
+.alumnigrid{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+    }
+.alumnicol{
+    float: left;
+    margin-bottom: 10px;
+    z-index: 1;
+    transition: transform .2s;
+    position: relative;
+}
+    
+.alumnicol:hover {
+    z-index: 5555 !important;
+    transform: scale(1.1);
+}
+    
+.alumniname{
+    font-size: 0.8em;
+}
 
 @media screen and (max-width: 650px) {
     .column {
@@ -72,6 +94,7 @@ figcaption {
 
   {% for member in site.members %}
         {% unless page.position-order contains member.position %}
+        {% unless member.position=="Alumni" %}
             <div class="column">
                 <figure>
                     <a href="{{ site.baseurl }}{{ member.url }}" data-keyboard="true">
@@ -81,6 +104,23 @@ figcaption {
                     <figcaption style="color: gray;">{{member.position}}</figcaption>
                 </figure>
             </div>
-        {% endunless %} 
+        {% endunless %}
+        {% endunless %}
   {% endfor %}
+</div>
+
+<h2>Alumni</h2>
+<div class="alumnigrid">
+    {% for member in site.members %}
+        {% if member.position=="Alumni" %}
+            <div class="alumnicol">
+                    <figure>
+                        <a href="{{ site.baseurl }}{{ member.url }}" data-keyboard="true">
+                            <img class="memberpic" src="{{ site.baseurl }}/assets/img/members/{{ member.img }}">
+                        </a>
+                        <figcaption class="alumniname">{{member.title}}</figcaption>
+                    </figure>
+                </div>
+        {% endif %}
+    {% endfor %}
 </div>
