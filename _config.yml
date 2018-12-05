@@ -1,5 +1,5 @@
 # SITE CONFIGURATION
-baseurl: "/"
+baseurl: "https://hidden-escarpment-98567.herokuapp.com/"
 url: "https://hidden-escarpment-98567.herokuapp.com/"
 title: MKP # site's title
 description: "Modelling of Cognitive Processes" # used by search engines
@@ -125,6 +125,6 @@ plugins: [jekyll-paginate, jekyll-seo-tag]
 #theme: type-on-strap # Uncomment if using the theme as a jekyll theme gem
 exclude: [vendor, "Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", "LICENSE", "README.md", "screenshot.png", "package.json", "node_modules", "gulpfile.js", ".idea/*"]
 
-future: ture
+future: true
 
 emergency-img: "assets/img/qm.png"
