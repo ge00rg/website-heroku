@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: "https://hidden-escarpment-98567.herokuapp.com/"
-url: "https://hidden-escarpment-98567.herokuapp.com/"
+url: ""
 title: MKP # site's title
 description: "Modelling of Cognitive Processes" # used by search engines
 
