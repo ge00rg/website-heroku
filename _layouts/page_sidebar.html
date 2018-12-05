@@ -41,8 +41,7 @@ layout: default
 {% assign talks=site.talks | sort: 'date' %}
 {% assign max_events=3 %}
 <div class="side_events">
-    <h1>Latest News</h1>
-{{nuwunix}}
+    <h1>Latest News{{nuwunix}}</h1>
     {% assign i=0 %}
     {% for post in site.posts %}
         {% if i < max_posts %}
