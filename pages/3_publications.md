@@ -29,6 +29,7 @@ banner-img: "publications_cut_scale.JPG"
 {% endfor %}
 
 {% if preprints=="true" %}
+asd
 <h3>Preprints</h3>
 <table class="publications">
 {% for paper in site.data.publications %}
