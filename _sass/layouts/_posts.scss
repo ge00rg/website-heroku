@@ -53,6 +53,8 @@ header {
     white-space: pre;
     text-transform: none;
     color: $text-color;
+    float: left;
+    clear: both;
 }
 .white-span{
     white-space: pre;
@@ -66,8 +68,10 @@ header {
     color: rgba($text-color, 0.5);
 }
 .date-span{
-    float: right;    
+    float: left;
+    clear: both;
 }
+.speakeraffil{float:left;}
 .break-mobile{clear: both;}
 .meta {
     color: rgba($text-color, .5);
@@ -317,9 +321,7 @@ header {
     .date-span{float: left; clear: both; white-space:nowrap;}
     .nav-venn{display: none;}
 }
-@media screen and (min-width: 800px) {
-    .break-mobile{display: none;}    
-}
+
 @media screen and (max-width: 1080px) {
     .int1text{display: block;}
     .int2text{display: block;}

@@ -4,19 +4,19 @@ layout: default
 <article {% if page.banner-img %}class="feature-image"{% endif %}>
     <header id="main" style="background-image: url('{{ site.baseurl }}/assets/img/banners/{{ page.banner-img }}')">
         <h2 id="{{ page.title | cgi_escape }}" class="title">{{ page.title }}</h2>
-        <p class="meta">
+        <div class="meta">
         {% assign time=page.date|date: "%R" %}
         {% if time=="00:00" %}
-            {% if page.speaker %}  <span class="speaker-span">by {{ page.speaker }}</span> <span class="affil-spanx"> [{{page.affiliation}}]</span>{% endif %}
-            {% if page.location %}<span class="white-span">          </span><span class="loc-span">{{page.location}}</span>{% endif %}
-            <span class="date-span">{{ page.date | date: "%B %-d, %Y" }}</span>
+            {% if page.speaker %}  <div style="float:left;"><span class="speaker-span">by {{ page.speaker }}</span> <span class="affil-spanx"> [{{page.affiliation}}]</span></div>{% endif %}
+            <div class="date-span">{{ page.date | date: "%B %-d, %Y" }}</div>
+            {% if page.location %}<div class="loc-span">{{page.location}}</div>{% endif %}
         {% else %}
-            {% if page.speaker %}  <span class="speaker-span">by {{ page.speaker }}</span> <span class="affil-spanx"> [{{page.affiliation}}]</span>{% endif %}
-            {% if page.location %}<span class="white-span"><span class="loc-span">          </span>{{page.location}}</span> {% endif %}
-            <span class="date-span">{{ page.date | date: "%B %-d, %Y  %R" }}</span>
+            {% if page.speaker %}  <div style="float:left;"><span class="speaker-span">by {{ page.speaker }}</span> <span class="affil-spanx"> [{{page.affiliation}}]</span></div>{% endif %}
+            <div class="date-span">{{ page.date | date: "%B %-d, %Y  %R" }}</div>
+            {% if page.location %}<div class="loc-span">{{page.location}}</div>{% endif %}
         {% endif %}
             <br class="break-mobile" />
-        </p>
+        </div>
     </header>
     <section class="post-content">
         {% if page.bootstrap %}
