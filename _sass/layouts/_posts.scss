@@ -320,3 +320,7 @@ header {
 @media screen and (min-width: 800px) {
     .break-mobile{display: none;}    
 }
+@media screen and (max-width: 1080px) {
+    .int1text{display: block;}
+    .int2text{display: block;}
+}
