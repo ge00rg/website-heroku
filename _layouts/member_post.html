@@ -3,7 +3,9 @@ layout: default
 ---
 <article {% if page.banner-img %}class="feature-image"{% endif %}>
     <header id="main" style="background-image: url('{{ site.baseurl }}/assets/img/banners/{{ page.banner-img }}')">
-        <h2 id="{{ page.title | cgi_escape }}" class="title">{{ page.title }}</h2>
+        <a href="{{site.baseurl}}/team" class="back-button-wide">back</a>
+        <h2 id="{{ page.title | cgi_escape }}" class="title member-title">{{ page.title }}</h2>
+        <a href="{{site.baseurl}}/team" class="back-button-narrow">back</a>
         <p class="meta">
             {{ page.date | date: "%B %-d, %Y" }}
             {% if page.author %} - {{ page.author }}{% endif %}
@@ -28,6 +30,7 @@ layout: default
     </div>
 </article>
 
+
 <!-- Disqus -->
 {% if site.theme_settings.disqus_shortname %}
     <div class="comments">
@@ -36,15 +39,25 @@ layout: default
 {% endif %}
 
 <!-- Post navigation -->
+<!--
 {% unless page.position=="Alumni" %}
     {% if site.theme_settings.post_navigation %}
         {% include post_nav.html %}
     {% endif %}
 {% endunless %}
+-->
 
 <style>
+.back-button-wide{float: right;}
+.back-button-narrow{float: left; margin-bottom: 0.8em; display: none;}
 .member-container{
     float: left;
+}
+@media screen and (max-width: 768px){
+    .back-button-wide{display: none;}
+    .back-button-narrow{display: block;}
+    .member-title{margin-bottom: 0;}
+
 }
 .memberimg{
     float: left;
