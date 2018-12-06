@@ -54,7 +54,7 @@ layout: default
     {% endfor %}
     <h1>Upcoming Events</h1>
     {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-{{nowunix}}
+{{site.date}}
     {% assign i=0 %}
 
     {% for post in talks %}
