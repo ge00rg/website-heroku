@@ -129,12 +129,12 @@ $('.author').each(function() {
     var trigger = ele.concat(dct[type]);
    $(this).hover( function(){
        if (type == 'lnk') {
-           $(this).css('text-decoration', 'underline');
+           <!--$(this).css('text-decoration', 'underline');-->
 	   $("[id='"+type+"']").css('text-decoration', 'underline');
            $("[id='"+trigger+"']").css({'transform': 'scale(1.5)', 'z-index': '5'});
        }
        else {
-            $(this).css({'transform': 'scale(1.5)', 'z-index': '5'});
+            <!--$(this).css({'transform': 'scale(1.5)', 'z-index': '5'});-->
            $("[id='"+type+"']").css({'transform': 'scale(1.5)', 'z-index': '5'});
            $("[id='"+trigger+"']").css('text-decoration', 'underline');
        }
