@@ -130,12 +130,11 @@ $('.author').each(function() {
    $(this).hover( function(){
        if (type == 'lnk') {
            $(this).css('text-decoration', 'underline');
-           $("[id='"+type+"']").css('text-decoration', 'underline');
+	   $("[id='"+type+"']").css('text-decoration', 'underline');
            $("[id='"+trigger+"']").css({'transform': 'scale(1.5)', 'z-index': '5'});
        }
        else {
             $(this).css({'transform': 'scale(1.5)', 'z-index': '5'});
-           $("[id='"+type+"']").css({'transform': 'scale(1.5)', 'z-index': '5'});
            $("[id='"+trigger+"']").css('text-decoration', 'underline');
        }
    },
@@ -143,13 +142,13 @@ $('.author').each(function() {
       if (type == 'lnk') {
            $("[id='"+trigger+"']").css({'transform': 'none', 'z-index': '1'});
             $(this).css('text-decoration', 'none');
-          $("[id='"+type+"']").css({'transform': 'none', 'z-index': '1'});
 
        }
        else {
            $("[id='"+trigger+"']").css('text-decoration', 'none');
             $(this).css({'transform': 'none', 'z-index': '1'});
-           $("[id='"+type+"']").css('text-decoration', 'none');
 
        }
+   });
+});
 </script>
