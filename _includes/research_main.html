@@ -143,12 +143,14 @@ $('.author').each(function() {
    function(){
       if (type == 'lnk') {
            $("[id='"+trigger+"']").css({'transform': 'none', 'z-index': '1'});
-            $(this).css('text-decoration', 'none');
+           $("[id='"+tp+"']").css('text-decoration', 'none');
+            <!--$(this).css('text-decoration', 'none');-->
 
        }
        else {
            $("[id='"+trigger+"']").css('text-decoration', 'none');
-            $(this).css({'transform': 'none', 'z-index': '1'});
+           $("[id='"+tp+"']").css({'transform': 'none', 'z-index': '1'});
+            <!--$(this).css({'transform': 'none', 'z-index': '1'});-->
 
        }
    });
