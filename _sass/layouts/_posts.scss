@@ -227,8 +227,7 @@ header {
         position: relative; 
         padding-bottom: 200px; 
         width: 50%; 
-        margin: auto; 
-        top: -80px;
+        margin: auto;
         left: -150px;
     }
     .venn{
@@ -239,7 +238,7 @@ header {
       transition: 0.1s linear;
     }
     .ellipse{
-      top: 60px; 
+      top: 0px; 
       width: 300px; 
       height: 180px;
     }
@@ -276,25 +275,25 @@ header {
     }
     .cat1text{
       left: 100px;
-      top: 80px;
+      top: 20px;
     }
     .cat2text{
       left: 290px;
-      top: 80px;
+      top: 20px;
     }
     .cat3text{
       left: 470px;
-      top: 80px;
+      top: 20px;
     }
     .int1text{
       left: 195px;
-      top: 120px;
+      top: 60px;
       z-index: 6;
       display: none;
     }
     .int2text{
       left: 380px;
-      top: 120px;
+      top: 60px;
       z-index: 6;
       display: none;
     }
